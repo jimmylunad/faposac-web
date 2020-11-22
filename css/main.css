@@ -1,0 +1,853 @@
+html {
+scroll-behavior: smooth;
+}
+
+/* header */
+.header {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+position: fixed;
+width: 100%;
+height: 60px;
+z-index: 1000;
+background-color: #2c2c2c;
+}
+.nav_log{
+  display: flex;
+}
+.nav_log_img{
+  position: absolute;
+  top: 0;
+  height: 130px;
+  z-index: 300;
+}
+.nav_container_img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+.nav_ul {
+  display: flex;
+  width: 670px;
+  justify-content: space-between;
+}
+.nav_img {
+  height: 20px;
+  cursor: pointer;
+}
+.nav_li {
+font-size: 12px;
+font-weight: 700;
+cursor: pointer;
+color: #ececec;
+text-decoration: none;
+transition: color .6s;
+}
+.nav_li:hover {
+color: #fdd400;
+}
+/* ----------------------------------- */
+
+/* Portada Principal */
+.portada {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+height:100vh;
+}
+
+.slider_img {
+width: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.dot {
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1002;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  /* display: inline-block; */
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+  transition: .5s ease;
+  background-color: #2c2c2c;
+
+}
+/* SELECTOR DE IDIOMAS */
+
+.titular_01 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left:10%;
+}
+
+.titulo_h3 {
+  color: #FFFFFF;
+  font-size: 120px;
+  font-weight: 400;
+}
+
+.titulo_h1 {
+  color: #FFFFFF;
+  font-size: 190px;
+  font-weight: 700;
+}
+
+
+.goTo {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5%;
+}
+
+.idioma_container {
+  display: flex;
+  /* align-self: flex-end; */
+  padding: 5px;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  width: 130px;
+  border: #ececec solid 3px;
+  border-radius: 10px;
+  z-index: 128;
+}
+
+.idioma_li {
+font-size: 12px;
+font-weight: 700;
+cursor: pointer;
+color: #ececec;
+list-style: none;
+}
+.idioma_li:hover {
+color: #fdd400;
+}
+
+.arrowDown{
+  cursor: pointer;
+  width: 40px;
+}
+
+.section-01 {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 10px 60px 10px 60px; */
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+  width: 100%;
+}
+
+.section-01_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100%;
+  height: 500px;
+}
+
+
+
+.section-01_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 600px;
+  height: 100%;
+}
+
+.section-01_text_container {
+  width: 80%;
+}
+.section-01_h1 {
+  font-weight: 900;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 50px;
+}
+.section-01_p {
+  color: #5f5d5b;
+  font-size: 16px;
+  text-align: justify;
+}
+
+
+/* SECCION 2 */
+.section-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-image: url(../assets/FONDOONDAS.png);
+max-width: 100%;
+min-height: 100vh;
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+}
+
+.section-02_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  /* padding: 80px; */
+}
+.section-02_div_container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 100%;
+}
+
+.section-02__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 90%;
+    z-index: 20;
+}
+
+
+.section-02__div_hoverOn {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 90%;
+
+    z-index: 10;
+}
+
+.section-02__div_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+height: 180px;
+background-color: #383736;
+}
+
+.section-02__div_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+height: 100%;
+background-color:#ececec;
+
+}
+
+
+.section-02__div_body_hoverOn {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 100%;
+height: 100%;
+/* background-color:#ececec; */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ffcc00;
+}
+
+
+.section-02_h1 {
+  font-weight: 800;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 30px;
+}
+.section-02_p {
+  width: 70%;
+  color: #5f5d5b;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+
+/* SECCION 3 */
+
+.section-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: #f8f8f8;
+max-width: 100%;
+height: 100vh;
+padding: 80px;
+}
+
+.section-03_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.slider_servicios_opciones {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.section-03_h1 {
+  margin-top: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #9b9894;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color .4s linear;
+}
+.section-03_h1:hover {
+  color: #383736;
+}
+
+.activeH1 {
+    color: #383736;
+}
+.sider_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+
+}
+
+.sider_div_info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width:550px;
+    height: 600px;
+  background-color: #1c1b1b;
+}
+
+
+
+.sider_div_info_h2 {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.sider_div_info_h1 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 70px;
+}
+
+.section-03_p {
+  width: 77%;
+  font-weight: 700;
+  color: #5f5d5b;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.sider_div_img_operaciones {
+  display: flex;
+  flex-direction: column;
+width:550px;
+  height: 600px;
+transform: scaleX(-1);
+background-image: url(../assets/Maquinarias/ServicioLOGISTICA.jpg);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+}
+
+.sider_div_img_estiba {
+  display: flex;
+  flex-direction: column;
+width:550px;
+  height: 600px;
+/* transform: scaleX(-1); */
+background-image: url(../assets/Maquinarias/ServicioESTIBAS.jpg);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+}
+
+.sider_div_img_maritima {
+  display: flex;
+  flex-direction: column;
+width:550px;
+  height: 600px;
+/* transform: scaleX(-1); */
+background-image: url(../assets/Maquinarias/ServicioAGENCIAMIENTO.jpg);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+}
+
+
+
+
+@media screen and (min-width:1366px){
+    .sider_div_img_operaciones  {
+        width:50%;
+    }
+      .sider_div_img_estiba  {
+        width:50%;
+    }
+        .sider_div_img_maritima  {
+        width:50%;
+    }
+
+    .maquinaria_info {
+       width:45%;
+    }
+      .maquinaria_collage {
+       width:55%;
+    }
+
+
+      .sider_div_info  {
+        width:50%;
+    }
+
+        }
+
+.onda_central {
+  position: absolute;
+  z-index: 200;
+  left: calc(50% - 56px);
+  top: 50%;
+}
+/* section-04  */
+.section-04 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-image: url(../assets/BGMaquinarias.png);
+max-width: 100%;
+min-height: 100vh;
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+}
+
+.maquinaria_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+width: 80%;
+/* height: 200px; */
+}
+
+.maquinaria_container_second {
+    display: flex;
+
+width: 100%;
+margin-bottom: 30PX;
+}
+
+
+.maquinaria_second_2 {
+  display: flex;
+      justify-content: center;
+    align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+height: 400px;
+}
+
+.maquinaria_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 100%;
+
+}
+
+.maquinaria_collage {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width:65%;
+
+  
+}
+.section-04_h1 {  
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  font-size: 70px;
+}
+.section-04_p {
+   font-family: 'Helvetica Neue LT Std';
+  width: 90%;
+  font-weight: 100;
+  color: #FFF;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.imagen-collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+cursor: pointer;
+width: 100%;
+height: 200px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+font-size: 16px;
+font-weight: 600;
+color: #FFF;
+position:relative;
+z-index: 10;
+transition: transform .4s;
+}
+
+.imagen-collage:hover {
+transform: scale(1.02);
+}
+
+.imagen-collage::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+z-index: -1;
+}
+
+
+
+
+.overloadCollage {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  /* opacity:.7; */
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 100;
+}
+.sub_overloadCollage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevMaquinaria {
+  cursor: pointer;
+  position: absolute;
+  left: 20%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.nextMaquinaria {
+   cursor: pointer;
+  right: 20%;
+    position: absolute;
+   transition: 0.6s ease;
+    user-select: none;
+color: #FFF;
+  padding: 16px;
+font-size: 30px;
+  border-radius: 3px 0 0 3px;
+}
+.prevMaquinaria:hover, .nextMaquinaria:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.containermySlides {
+  width: 100%;
+  position: relative;
+}
+
+.slider_img_maquinaria {
+/* width: 460px; */
+height: 600px;
+z-index: 101;
+border: #000 8px solid;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+.buttonExit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+position: absolute;
+top: 20px;
+right: 20px;
+  cursor: pointer;
+  height: 40px;
+  z-index: 102;
+  font-size: 25px;
+  color: #FFF;
+  background-color: #000;
+  transition: background .4s ;
+}
+.buttonExit:hover {
+background-color: red;
+}
+
+
+/* section 5 */
+
+.section-05 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #f8f8f8;
+max-width: 100%;
+height: 100vh;
+padding: 80px;
+}
+
+.section-05_h1 {
+  font-weight: 900;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 50px;  
+}
+.puertos_container {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.puertos_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+}
+
+
+.puertos_list {
+  display: flex;
+  width: 110px;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.puertos_map {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+
+}
+
+.puertos_h1 {
+  font-weight: 700;
+  text-align: center;
+  color: #9b9894;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color .4s linear;
+}
+.puertos_h1:hover {
+  color: #383736;
+}
+
+.activePuertoH1 {
+    color: #383736;
+}
+
+
+/* SECTION 6 */
+.section-06 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #FFF;
+max-width: 100%;
+padding: 80px;
+}
+
+.section-06_h1 {
+  font-weight: 900;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 50px;  
+}
+.clientes_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.clientes_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.clientes_text p {
+      font-family: 'Helvetica Neue LT Std';
+font-size: 16px;
+text-align: center;
+margin-bottom: 20px;
+font-weight: 700;
+opacity: .7;
+color: #1c1b1b;
+}
+.clientes_img_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img_container_01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+
+/* SECTION 6 */
+.section-07 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #eeeeee;
+max-width: 100%;
+
+padding: 80px;
+}
+
+.section-07_h1 {
+  font-weight: 900;
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 50px;  
+}
+.clientes_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}

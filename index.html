@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <title>FAPOSAC | WEB</title>
+</head>
+
+<body>
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="nav_logo">
+      <img class="nav_log_img" src='./assets/nav_logo.png' alt="logo" />
+    </div>
+    <ul class="nav_ul">
+      <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
+      <a class="nav_li" href="#FILOSOFIA">FILOSOFIA</a>
+      <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
+      <a class="nav_li" href="#MAQUINARIAS">MAQUINARIAS</a>
+      <a class="nav_li" href="#PUERTOS">PUERTOS</a>
+      <a class="nav_li" href="#CLIENTES">CLIENTES</a>
+      <a class="nav_li" href="#CONTÁCTANOS">CONTÁCTANOS</a>
+
+
+    </ul>
+    <div class="nav_container_img">
+      <img class="nav_img" src='./assets/home.svg' alt="home" />
+      <img class="nav_img" src='./assets/facebook.svg' alt="facebook" />
+      <img class="nav_img" src='./assets/youtube.svg' alt="youtube" />
+    </div>
+  </header>
+  <!-- ------------------------------------------------------ -->
+  <div class="portada">
+    <div class="mySlides fade">
+      <img src="./assets/PORTADA.jpg" class="slider_img">
+    </div>
+    <div class="mySlides fade">
+      <img src="./assets/FIERROS2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="./assets/CARBON.8.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="titular_01">
+      <h3 class="titulo_h3">
+        AQUÍ
+      </h3>
+      <h1 class="titulo_h1">
+        TITULAR
+      </h1>
+    </div>
+
+    <div class="goTo">
+      <div id='idioma_container' class="idioma_container">
+        <li class="idioma_li">
+          EN /
+        </li>
+        <li class="idioma_li">
+          ES /
+        </li>
+        <li class="idioma_li">
+          AL /
+        </li>
+        <li class="idioma_li">
+          FR
+        </li>
+
+      </div>
+      <img class="arrowDown" src='./assets/arrowdown.svg' alt="arrow" />
+    </div>
+  </div>
+  <section id='IDENTIDAD' class="section-01">
+    <div class="section-01_video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LYODWPMlMoA" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    </div>
+    <div class="section-01_text">
+      <img class="" src='./assets/onda_vector.png' alt="arrow" />
+      <br>
+      <div class="section-01_text_container">
+        <h1 class="section-01_h1">
+          IDENTIDAD
+        </h1>
+        <br>
+        <p class="section-01_p">
+          Facilidad Portuaria S.A.C. es una empresa familiar que tiene como giro principal el agenciamiento marítimo,
+          servicios de
+          estiba y desestiba en naves mercantes, así como manipuleo y movilización de mercadería y equipos en los
+          terminales
+          portuarios y extraportuarios. Cuenta con más de 25 años de experiencia en el mercado y tiene presencia en los
+          puertos de
+          Matarani, Mollendo, Ilo, La Planchada, Callao, Salaverry y Chimbote.
+        </p>
+        <br>
+        <p class="section-01_p">
+          Nuestro principal objetivo es promover la mejora continua en sus procesos internos, y continuar invirtiendo en
+          recursos
+          que permitan ofrecer a nuestros clientes una logística integral, atendiendo sus necesidades y las exigencias
+          del
+          mercado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id='FILOSOFIA' class="section-02">
+    <div class="section-02_container">
+      <img class="" src='./assets/onda_vector.png' alt="arrow" />
+      <br>
+      <h1 class="section-01_h1">
+        FILOSOFÍA
+      </h1>
+      <br>
+      <div class="section-02_div_container">
+        <!-- - -------------------------------------------------------------------- -->
+        <!-- CUANDO ESTA ACTIVO -->
+        <div style="display: none;" class="section-02__div_hoverOn" id="mision_container">
+          <div class="section-02__div_header">
+            <img style="width: 100px;" class="" src='./assets/flecha_amarilla.svg' alt="diamante" />
+          </div>
+          <div class="section-02__div_body">
+
+            <h1 class="section-02_h1">
+              Misión
+            </h1>
+            <br>
+            <p class="section-02_p">
+              Ofrecer nuestros servicios excediendo las expectativas de nuestros clientes, proporcionando
+              permanente información acerca del status de las naves, carga, situación de puerto y
+              pronósticos del mar.
+            </p>
+          </div>
+        </div>
+        <!-- CUANDO ESTA EN HOVER -->
+        <div onmouseover="ocultarMision(this)" onmouseout="mostrarMision(this)" class="section-02__div">
+          <div class="section-02__div_body_hoverOn">
+            <div class="circle">
+              <img style="width: 100px; margin-left: 20px;" src='./assets/arrow_black.svg' alt="diamante" />
+            </div>
+            <br>
+
+            <h1 class="section-02_h1">
+              Misión
+            </h1>
+            <br>
+
+          </div>
+        </div>
+        <!-- - -------------------------------------------------------------------- -->
+        <!-- - -------------------------------------------------------------------- -->
+        <!-- CUANDO ESTA ACTIVO -->
+        <div style="display: none;" class="section-02__div_hoverOn" id="vision_container">
+          <div class="section-02__div_header">
+            <img style="width: 100px;" class="" src='./assets/barco_amarillo.svg' alt="diamante" />
+          </div>
+          <div class="section-02__div_body">
+
+            <h1 class="section-02_h1">
+              Visión
+            </h1>
+            <br>
+            <p class="section-02_p">
+              Ofrecer nuestros servicios excediendo las expectativas de nuestros clientes, proporcionando
+              permanente información acerca del status de las naves, carga, situación de puerto y
+              pronósticos del mar.
+            </p>
+          </div>
+        </div>
+        <!-- CUANDO ESTA EN HOVER -->
+        <div onmouseover="ocultarVision(this)" onmouseout="mostrarVision(this)" class="section-02__div">
+          <div class="section-02__div_body_hoverOn">
+            <div class="circle">
+              <img style="width: 100px;" src='./assets/barco_black.svg' alt="diamante" />
+            </div>
+            <br>
+
+            <h1 class="section-02_h1">
+              Visión
+            </h1>
+            <br>
+
+          </div>
+        </div>
+        <!-- - -------------------------------------------------------------------- -->
+        <!-- - -------------------------------------------------------------------- -->
+        <!-- CUANDO ESTA ACTIVO -->
+        <div style="display: none;" class="section-02__div_hoverOn" id="valores_container">
+          <div class="section-02__div_header">
+            <img style="width: 100px;" class="" src='./assets/diamante_amarillo.svg' alt="diamante" />
+          </div>
+          <div class="section-02__div_body">
+
+            <h1 class="section-02_h1">
+              Valores
+            </h1>
+            <br>
+            <p class="section-02_p">
+              Ofrecer nuestros servicios excediendo las expectativas de nuestros clientes, proporcionando
+              permanente información acerca del status de las naves, carga, situación de puerto y
+              pronósticos del mar.
+            </p>
+          </div>
+        </div>
+        <!-- CUANDO ESTA EN HOVER -->
+        <div onmouseover="ocultarValores(this)" onmouseout="mostrarValores(this)" class="section-02__div">
+          <div class="section-02__div_body_hoverOn">
+            <div class="circle">
+              <img style="width: 100px;" src='./assets/diamante_black.svg' alt="diamante" />
+            </div>
+            <br>
+
+            <h1 class="section-02_h1">
+              Valores
+            </h1>
+            <br>
+
+          </div>
+        </div>
+        <!-- - -------------------------------------------------------------------- -->
+      </div>
+    </div>
+  </section>
+  <!-- - -------------------------------------------------------------------- -->
+  <section id='SERVICIOS' class="section-03">
+
+    <div class="section-03_container">
+      <!-- titulo -->
+      <br>
+      <h1 class="section-01_h1">
+        SERVICIOS
+      </h1>
+      <br>
+
+      <!-- opciones -->
+      <div class="slider_servicios_opciones">
+        <h1 class="section-03_h1 activeH1" onclick="mostrarMe(this)" id='AgenciaOption'>
+          Agencia marítima
+        </h1>
+        <h1 class="section-03_h1" onclick="mostrarMe(this)" id='estibaOption'>
+          Estiba / Desestiba
+        </h1>
+        <h1 class="section-03_h1" onclick="mostrarMe(this)" id='operacionesOption'>
+          Operaciones logisticas
+        </h1>
+      </div>
+
+      <!--Agencia marítima-->
+      <div class="sider_wrap fade" id='agencia'>
+        <div class="sider_div_info">
+          <div style="margin-left: 60px;">
+            <h2 class="sider_div_info_h2">
+              AGENCIA
+            </h2>
+            <h1 class="sider_div_info_h1">
+              MARÍTIMA
+            </h1>
+            <br>
+            <p class="section-03_p">
+              Proporcionar las mejores soluciones en Matarani – Mollendo (Multiboyas, GMP, Matarani /Tisur), e Ilo
+              (Multiboyas, GMP,
+              Tablones, Cata Cata/ TLT, Terminal Enersur, SPCC y Marine Trestly Terminal) de las diferentes naves
+              tanqueras,
+              graneleros,
+              containeros, multipropósito, carriers y pesqueros.
+            </p>
+          </div>
+        </div>
+        <div class="sider_div_img_maritima"></div>
+        <img class="onda_central" src='./assets/onda_vector.png' alt="arrow" />
+      </div>
+
+      <!-- Estiba / Desestiba -->
+      <div class="sider_wrap fade" id='estiba' style="display: none;">
+        <div class="sider_div_info">
+          <div style="margin-left: 60px;">
+            <h2 class="sider_div_info_h2">
+              ESTIBA
+            </h2>
+            <h1 class="sider_div_info_h1">
+              DESESTIBA
+            </h1>
+            <br>
+            <p class="section-03_p">
+              Nosotros realizamos las actividades de estiba y desestiba en las operaciones portuarias de contenedores,
+              carga rodante,
+              carga suelta, carga a granel, big bags, tuberías, planchas de acero, bobinas, estructuras, maquinaria
+              simple y pesada,
+              carga de proyecto, carga especial, etc. Para lo cual contamos con equipos, materiales y personal
+              debidamente capacitados
+              y certificados.
+            </p>
+          </div>
+        </div>
+        <div class="sider_div_img_estiba"></div>
+        <img class="onda_central" src='./assets/onda_vector.png' alt="arrow" />
+      </div>
+      <!-- Operaciones Logisticas -->
+      <div class="sider_wrap fade" id='operaciones' style="display: none;">
+        <div class="sider_div_info">
+          <div style="margin-left: 60px;">
+            <h2 class="sider_div_info_h2">
+              OPERACIONES
+            </h2>
+            <h1 class="sider_div_info_h1">
+              LOGÍSTICAS
+            </h1>
+            <br>
+            <p class="section-03_p">
+              Contamos con equipos y experiencia necesaria para ofrecer a nuestros clientes un eficiente servicio
+              logístico que supere
+              con éxito los retos de la globalización, a través de los cuales buscamos integrar más servicios y añadir
+              un
+              mayor valor
+              a sus operaciones.
+            </p>
+          </div>
+        </div>
+        <div class="sider_div_img_operaciones"></div>
+        <img class="onda_central" src='./assets/onda_vector.png' alt="arrow" />
+      </div>
+    </div>
+  </section>
+  <!-- - -------------------------------------------------------------------- -->
+  <!-- - -------------------------------------------------------------------- -->
+  <section id='MAQUINARIAS' class="section-04">
+    <div class="maquinaria_container">
+      <div class="maquinaria_container_second">
+        <h1 class="section-04_h1">
+          MAQUINARIAS
+        </h1>
+      </div>
+
+      <div class="maquinaria_second_2">
+        <div class="maquinaria_info">
+          <img src='./assets/onda_vector.png' alt="arrow" />
+          <p class="section-04_p" style="margin-top: 40px;">
+            Nuestra maquinaria se encuentra debidamente certificada , asi mismo contamos con inspección/ surveyors para
+            brindar
+            servicios de supervisión dentro de los puertos, extra puerto y almacenes, con los mas altos estandares de
+            calidad y
+            rendimiento en beneficio del comercio exterior.
+          </p>
+        </div>
+        <div class="maquinaria_collage">
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/BARREDORA.jpg);"
+            onclick="showOverloadCollage(1)">
+            BARREDORA
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/CARGADORFRONTAL.jpg)"
+            onclick="showOverloadCollage(2)">
+            CARGADOR FRONTAL
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/clamshell.jpg);"
+            onclick="showOverloadCollage(3)">
+            CLAMSHELL
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/TOLVA.jpeg);"
+            onclick="showOverloadCollage(4)">
+            TOLVA
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/corrales2.jpeg);"
+            onclick="showOverloadCollage(5)">
+            CORRALES
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/MONTACARGAS.jpg);"
+            onclick="showOverloadCollage(6)">
+            MONTACARGAS
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/Tina.png);"
+            onclick="showOverloadCollage(7)">
+            TINA
+          </div>
+          <div class="imagen-collage" style="background-image: url(./assets/Maquinarias/TRANSPORTE.jpeg);"
+            onclick="showOverloadCollage(8)">
+            TRANSPORTE
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overloadCollage" id='overloadCollage' style="display: none;">
+      <div class="sub_overloadCollage">
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/BARREDORA.jpg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/CARGADORFRONTAL.jpg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/clamshell.jpg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/TOLVA.jpeg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/corrales2.jpeg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/MONTACARGAS.jpg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/Tina.png" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <div class="mySlidesMaquinaria fade">
+          <div class="containermySlides">
+            <img src="./assets/Maquinarias/TRANSPORTE.jpeg" class="slider_img_maquinaria">
+            <div class="buttonExit" onclick="unloadOverloadCollage()">
+              X
+            </div>
+          </div>
+        </div>
+        <a class="prevMaquinaria" onclick="plusSlidesMaquinaria(-1)">&#10094;</a>
+        <a class="nextMaquinaria" onclick="plusSlidesMaquinaria(1)">&#10095;</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- - -------------------------------------------------------------------- -->
+  <section id='PUERTOS' class="section-05">
+    <img class="" src='./assets/onda_vector.png' alt="arrow" />
+    <br>
+    <h1 class="section-05_h1">
+      PUERTOS
+    </h1>
+
+    <div class="puertos_container">
+      <div class="puertos_options">
+        <div class="puertos_list">
+          <img src='./assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
+          <h1 class="puertos_h1" onclick="showMaps('Matarani')">
+            Matarani
+          </h1>
+        </div>
+        <div class="puertos_list">
+          <img src='./assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
+          <h1 class="puertos_h1" onclick="showMaps('Mollendo')">
+            Mollendo
+          </h1>
+        </div>
+        <div class="puertos_list">
+          <img src='./assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
+          <h1 class="puertos_h1" onclick="showMaps('Ilo')">
+            Ilo
+          </h1>
+        </div>
+        <div class="puertos_list">
+          <img src='./assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
+          <h1 class="puertos_h1" onclick="showMaps('Callao')">
+            Callao
+          </h1>
+        </div>
+
+        <div class="puertos_list">
+          <img src='./assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
+          <h1 class="puertos_h1" onclick="showMaps('Salaverry')">
+            Salaverry
+          </h1>
+        </div>
+
+      </div>
+      <div class="puertos_map" id='puertos_map'>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.46434591286015!2d-72.10832574246116!3d-17.002588316461658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91415b02a934acad%3A0x2469f3ec9178c4c1!2sPuerto%20de%20Matarani!5e0!3m2!1ses-419!2spe!4v1606069840165!5m2!1ses-419!2spe"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- - -------------------------------------------------------------------- -->
+  <section id='CLIENTES' class="section-06">
+    <br>
+    <h1 class="section-06_h1">
+      CLIENTES
+    </h1>
+    <div class="clientes_container">
+      <div class="clientes_text">
+        <p>
+          Estos son algunos de los principales que han confíado en nosotros para acompañarlos en el crecimiento y
+          desarrollo de
+          sus negocios:
+        </p>
+      </div>
+      <br>
+
+      <div class="clientes_img_container">
+        <div class="img_container_01">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/01.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/02.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/03.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/04.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/05.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/06.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/07.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/08.png">
+        </div>
+        <br>
+        <div class="img_container_01">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/09.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/10.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/11.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/12.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/13.png">
+        </div>
+        <br>
+        <br>
+        <div class="img_container_01">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/14.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/15.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/16.png">
+          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/17.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- - -------------------------------------------------------------------- -->
+
+  <!-- - -------------------------------------------------------------------- -->
+  <section id='CONTÁCTANOS' class="section-07">
+    <br>
+    <h1 class="section-07_h1">
+      CONTACTOS
+    </h1>
+    <div class="contactos_container">
+    </div>
+  </section>
+  <!-- - -------------------------------------------------------------------- -->
+
+
+</body>
+<script src="js/slideshow.js"></script>
+<script src="js/filosofia.js"></script>
+<script src="js/servicios.js"></script>
+<script src="js/map.js"></script>
+
+</html>
