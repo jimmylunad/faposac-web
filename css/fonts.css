@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Helvetica Neue LT Std';
-    src: url('/assets/font/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
-        url('/assets/font/HelveticaNeueLTStd-Cn.woff') format('woff');
+    src: url('../assets/font/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('../assets/font/HelveticaNeueLTStd-Cn.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Helvetica LT Std';
-    src: url('/assets/font/HelveticaLTStd-Bold.woff2') format('woff2'),
-        url('/assets/font/HelveticaLTStd-Bold.woff') format('woff');
+    src: url('../assets/font/HelveticaLTStd-Bold.woff2') format('woff2'),
+        url('../assets/font/HelveticaLTStd-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Helvetica Neue LT Std';
-    src: url('/assets/font/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
-        url('/assets/font/HelveticaNeueLTStd-Lt.woff') format('woff');
+    src: url('../assets/font/HelveticaNeueLTStd-Lt.woff2') format('woff2'),
+        url('../assets/font/HelveticaNeueLTStd-Lt.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Helvetica LT Std';
-    src: url('/assets/font/HelveticaLTStd-Blk.woff2') format('woff2'),
-        url('/assets/font/HelveticaLTStd-Blk.woff') format('woff');
+    src: url('../assets/font/HelveticaLTStd-Blk.woff2') format('woff2'),
+        url('../assets/font/HelveticaLTStd-Blk.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Helvetica LT Std';
-    src: url('/assets/font/HelveticaLTStd-Roman.woff2') format('woff2'),
-        url('/assets/font/HelveticaLTStd-Roman.woff') format('woff');
+    src: url('../assets/font/HelveticaLTStd-Roman.woff2') format('woff2'),
+        url('../assets/font/HelveticaLTStd-Roman.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'Helvetica Neue LT Std';
-    src: url('/assets/font/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
-        url('/assets/font/HelveticaNeueLTStd-Bd.woff') format('woff');
+    src: url('../assets/font/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+        url('../assets/font/HelveticaNeueLTStd-Bd.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
