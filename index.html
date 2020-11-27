@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="stylesheet" href="css/menu_toggle.css">
   <title>FAPOSAC | WEB</title>
 </head>
 
 <body>
-
 
   <!-- Header -->
   <header class="header">
@@ -20,6 +20,7 @@
       <img class="nav_log_img" src='./assets/nav_logo.png' alt="logo" />
     </div>
     <ul class="nav_ul">
+      <a class="nav_li" href="#PORTADA">HOME</a>
       <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
       <a class="nav_li" href="#FILOSOFIA">FILOSOFIA</a>
       <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
@@ -33,17 +34,48 @@
       <img class="nav_img" src='./assets/facebook.svg' alt="facebook" />
       <img class="nav_img" src='./assets/youtube.svg' alt="youtube" />
     </div>
+
+
+
+    <div class="nav_menu_option">
+      <img class="nav_menu_option_img" src='./assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" />
+
+      <ul class="nav_ul_respon " id='nav_ul_respon'>
+        <div style="display: flex; width: 60px; justify-content: space-around;">
+          <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
+          <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
+          <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
+        </div>
+        <a class="nav_li" href="#PORTADA">HOME</a>
+        <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
+        <a class="nav_li" href="#FILOSOFIA">FILOSOFIA</a>
+        <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
+        <a class="nav_li" href="#MAQUINARIAS">MAQUINARIAS</a>
+        <a class="nav_li" href="#PUERTOS">PUERTOS</a>
+        <a class="nav_li" href="#CLIENTES">CLIENTES</a>
+        <a class="nav_li" href="#CONTACTANOS">CONTÁCTANOS</a>
+        <div class="nav_container_img_res">
+          <img class="nav_img_res" src='./assets/home_blanco.svg' alt="home" />
+          <img class="nav_img_res" src='./assets/faceboook_blanco.svg' alt="facebook" />
+          <img class="nav_img_res" src='./assets/youtube_blanco.svg' alt="youtube" />
+        </div>
+      </ul>
+
+    </div>
+
+
+
   </header>
   <!-- ------------------------------------------------------ -->
-  <div class="portada">
+  <section id='PORTADA' class="portada">
     <div class="mySlides fade">
       <img src="./assets/PORTADA.jpg" class="slider_img">
     </div>
     <div class="mySlides fade">
-      <img src="./assets/FIERROS2.jpg" style="width:100%">
+      <img src="./assets/FIERROS2.jpg" class="slider_img">
     </div>
     <div class="mySlides fade">
-      <img src="./assets/CARBON.8.jpg" style="width:100%">
+      <img src="./assets/CARBON.8.jpg" class="slider_img">
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -75,7 +107,7 @@
       </div>
       <img class="arrowDown" src='./assets/arrowdown.svg' alt="arrow" />
     </div>
-  </div>
+  </section>
   <section id='IDENTIDAD' class="section-01">
     <div class="section-01_video">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/LYODWPMlMoA" frameborder="0"
@@ -83,7 +115,6 @@
         allowfullscreen></iframe>
     </div>
 
-    </div>
     <div class="section-01_text">
       <img class="" src='./assets/onda_vector.png' alt="arrow" />
       <br>
@@ -97,13 +128,15 @@
           servicios de
           estiba y desestiba en naves mercantes, así como manipuleo y movilización de mercadería y equipos en los
           terminales
-          portuarios y extraportuarios. Cuenta con más de 25 años de experiencia en el mercado y tiene presencia en los
+          portuarios y extraportuarios. Cuenta con más de 25 años de experiencia en el mercado y tiene presencia en
+          los
           puertos de
           Matarani, Mollendo, Ilo, La Planchada, Callao, Salaverry y Chimbote.
         </p>
         <br>
         <p class="section-01_p">
-          Nuestro principal objetivo es promover la mejora continua en sus procesos internos, y continuar invirtiendo en
+          Nuestro principal objetivo es promover la mejora continua en sus procesos internos, y continuar invirtiendo
+          en
           recursos
           que permitan ofrecer a nuestros clientes una logística integral, atendiendo sus necesidades y las exigencias
           del
@@ -111,6 +144,7 @@
         </p>
       </div>
     </div>
+
   </section>
 
 
@@ -121,13 +155,15 @@
       <h1 class="section-01_h1">
         FILOSOFÍA
       </h1>
-      <br>
+
       <div class="section-02_div_container">
         <!-- - -------------------------------------------------------------------- -->
-        <!-- CUANDO ESTA ACTIVO -->
-        <div style="display: none;" class="section-02__div_hoverOn" id="mision_container">
+        <!-- MISION -->
+        <div style="display: none; cursor: pointer;" class="section-02__div_hoverOn" id="mision_container"
+          onclick="ocultarMision('Mision')">
           <div class="section-02__div_header">
-            <img style="width: 100px;" class="" src='./assets/flecha_amarilla.svg' alt="diamante" />
+            <img style="width: 100px;" class="" src='./assets/flecha_amarilla.svg' alt="
+              diamante" />
           </div>
           <div class="section-02__div_body">
 
@@ -142,25 +178,26 @@
             </p>
           </div>
         </div>
-        <!-- CUANDO ESTA EN HOVER -->
-        <div onmouseover="ocultarMision(this)" onmouseout="mostrarMision(this)" class="section-02__div">
+
+        <!-- CUANDO ESTA DESACTIVADO -->
+        <div class="section-02__div" id="mision_container_active">
           <div class="section-02__div_body_hoverOn">
-            <div class="circle">
-              <img style="width: 100px; margin-left: 20px;" src='./assets/arrow_black.svg' alt="diamante" />
+            <div class="circle" onclick="mostrarMision('Mision')">
+              <div class="img_mision">
+              </div>
             </div>
             <br>
-
             <h1 class="section-02_h1">
               Misión
             </h1>
             <br>
-
           </div>
         </div>
         <!-- - -------------------------------------------------------------------- -->
         <!-- - -------------------------------------------------------------------- -->
-        <!-- CUANDO ESTA ACTIVO -->
-        <div style="display: none;" class="section-02__div_hoverOn" id="vision_container">
+        <!-- Visión-->
+        <div style="display: none; cursor: pointer;" class="section-02__div_hoverOn" id="vision_container"
+          onclick="ocultarMision('Vision')">
           <div class="section-02__div_header">
             <img style="width: 100px;" class="" src='./assets/barco_amarillo.svg' alt="diamante" />
           </div>
@@ -177,11 +214,12 @@
             </p>
           </div>
         </div>
-        <!-- CUANDO ESTA EN HOVER -->
-        <div onmouseover="ocultarVision(this)" onmouseout="mostrarVision(this)" class="section-02__div">
+        <!-- CUANDO ESTA DESACTIVADO -->
+        <div class="section-02__div" id="vision_container_active">
           <div class="section-02__div_body_hoverOn">
-            <div class="circle">
-              <img style="width: 100px;" src='./assets/barco_black.svg' alt="diamante" />
+            <div class="circle" onclick="mostrarMision('Vision')">
+              <div class="img_vision">
+              </div>
             </div>
             <br>
 
@@ -194,8 +232,9 @@
         </div>
         <!-- - -------------------------------------------------------------------- -->
         <!-- - -------------------------------------------------------------------- -->
-        <!-- CUANDO ESTA ACTIVO -->
-        <div style="display: none;" class="section-02__div_hoverOn" id="valores_container">
+        <!-- Valores -->
+        <div style="display: none; cursor: pointer;" class="section-02__div_hoverOn" id="valores_container"
+          onclick="ocultarMision('Valores')">
           <div class="section-02__div_header">
             <img style="width: 100px;" class="" src='./assets/diamante_amarillo.svg' alt="diamante" />
           </div>
@@ -212,11 +251,12 @@
             </p>
           </div>
         </div>
-        <!-- CUANDO ESTA EN HOVER -->
-        <div onmouseover="ocultarValores(this)" onmouseout="mostrarValores(this)" class="section-02__div">
+        <!-- CUANDO ESTA Desactivado -->
+        <div class="section-02__div" id="valores_container_active">
           <div class="section-02__div_body_hoverOn">
-            <div class="circle">
-              <img style="width: 100px;" src='./assets/diamante_black.svg' alt="diamante" />
+            <div class="circle" onclick="mostrarMision('Valores')">
+              <div class="img_valores">
+              </div>
             </div>
             <br>
 
@@ -258,7 +298,7 @@
       <!--Agencia marítima-->
       <div class="sider_wrap fade" id='agencia'>
         <div class="sider_div_info">
-          <div style="margin-left: 60px;">
+          <div class='sider-margins'>
             <h2 class="sider_div_info_h2">
               AGENCIA
             </h2>
@@ -283,7 +323,7 @@
       <!-- Estiba / Desestiba -->
       <div class="sider_wrap fade" id='estiba' style="display: none;">
         <div class="sider_div_info">
-          <div style="margin-left: 60px;">
+          <div class="sider-margins">
             <h2 class="sider_div_info_h2">
               ESTIBA
             </h2>
@@ -308,7 +348,7 @@
       <!-- Operaciones Logisticas -->
       <div class="sider_wrap fade" id='operaciones' style="display: none;">
         <div class="sider_div_info">
-          <div style="margin-left: 60px;">
+          <div class="sider-margins">
             <h2 class="sider_div_info_h2">
               OPERACIONES
             </h2>
@@ -345,7 +385,8 @@
         <div class="maquinaria_info">
           <img src='./assets/onda_vector.png' alt="arrow" />
           <p class="section-04_p" style="margin-top: 40px;">
-            Nuestra maquinaria se encuentra debidamente certificada , asi mismo contamos con inspección/ surveyors para
+            Nuestra maquinaria se encuentra debidamente certificada , asi mismo contamos con inspección/ surveyors
+            para
             brindar
             servicios de supervisión dentro de los puertos, extra puerto y almacenes, con los mas altos estandares de
             calidad y
@@ -532,30 +573,30 @@
 
       <div class="clientes_img_container">
         <div class="img_container_01">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/01.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/02.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/03.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/04.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/05.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/06.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/07.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/08.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/01.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/02.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/03.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/04.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/05.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/06.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/07.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/08.png">
         </div>
         <br>
         <div class="img_container_01">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/09.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/10.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/11.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/12.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/13.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/09.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/10.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/11.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/12.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/13.png">
         </div>
         <br>
         <br>
         <div class="img_container_01">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/14.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/15.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/16.png">
-          <img style="width: 200px; height: 40px; filter: grayscale(100%);" src="./assets/clientes/17.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/14.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/15.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/16.png">
+          <img style="width: 130px; height: 30px; filter: grayscale(100%);" src="./assets/clientes/17.png">
         </div>
       </div>
     </div>
@@ -565,7 +606,7 @@
   <!-- - -------------------------------------------------------------------- -->
   <section id='CONTACTANOS' class="section-07">
     <div class="ondas_container">
-      <img class="" src='./assets/onda_vector.png' alt="arrow" />
+      <img class="ondas_container_img" src='./assets/onda_vector.png' alt="arrow" />
       <br>
       <h1 class="section-07_h1">
         CONTACTOS
@@ -605,6 +646,7 @@
         <img class="nav_img" src='./assets/youtube.svg' alt="youtube" />
       </div>
       <ul class="nav_ul">
+        <a class="nav_li" href="#PORTADA">HOME</a>
         <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
         <a class="nav_li" href="#FILOSOFIA">FILOSOFIA</a>
         <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
@@ -625,5 +667,6 @@
 <script src="js/filosofia.js"></script>
 <script src="js/servicios.js"></script>
 <script src="js/map.js"></script>
+<script src="js/menu.js"></script>
 
 </html>
