@@ -9,7 +9,9 @@ function toggleMenu (event) {
 }
 
 // event
-menu.addEventListener('click', toggleMenu, false);
+if(menu) {
+	menu.addEventListener('click', toggleMenu, false);
+}
 
 //Solución con jQUery
 /*$(document).ready(function(){
