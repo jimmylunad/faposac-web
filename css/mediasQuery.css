@@ -221,7 +221,7 @@ flex-direction: column;
 .sider_div_info {
   width: 100%;
 }
-.sider_div_img_maritima {
+.sider_div_img_maritima, .sider_div_img_estiba, .sider_div_img_operaciones {
   width: 100%;
 }
 .puertos_container {
