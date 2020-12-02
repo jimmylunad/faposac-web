@@ -34,18 +34,42 @@ function mostrarMision(element) {
   const valores_container = document.getElementById('valores_container')
 
   if (element === 'Mision') {
-        mision_container_active.style.display = "none";
-        mision_container.style.display = 'flex'
+    mision_container_active.style.display = "none";
+    mision_container.style.display = 'flex'
+    
+ vision_container.style.display = 'none'
+   vision_container_active.style.display = 'flex'
+        
+ valores_container.style.display = 'none'
+   valores_container_active.style.display = 'flex'
+    
+
+
   }
 
     if (element === 'Vision') {
         vision_container_active.style.display = "none";
-        vision_container.style.display = 'flex'
+      vision_container.style.display = 'flex'
+      
+       mision_container.style.display = 'none'
+   mision_container_active.style.display = 'flex'
+        
+ valores_container.style.display = 'none'
+   valores_container_active.style.display = 'flex'
+
   }
 
       if (element === 'Valores') {
         valores_container_active.style.display = "none";
         valores_container.style.display = 'flex'
+
+   mision_container.style.display = 'none'
+        mision_container_active.style.display = 'flex'
+
+            vision_container_active.style.display = "flex";
+      vision_container.style.display = 'none'
+
+       
   }
 }
 

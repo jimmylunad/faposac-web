@@ -1,6 +1,5 @@
 function mostrarMe(element) {
   const id = element.id
-  console.log("QUE HAY EN ID", id)
 
   if (id === 'AgenciaOption') {
   const agencia = document.getElementById('agencia')
@@ -51,6 +50,6 @@ operaciones.style.display = 'none'
 estiba.style.display = 'none'
 operaciones.style.display = 'flex'
   }
-
-
 }
+
+
