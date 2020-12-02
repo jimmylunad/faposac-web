@@ -55,6 +55,7 @@ color: #fdd400;
 .nav_menu_option_img {
   width: 80px;
   height: 20px;
+  z-index: 9200;
 }
 
 .nav_ul_respon {
@@ -95,13 +96,13 @@ height:90vh;
   z-index: 1;
 }
 
-.slider_img {
+/* .slider_img {
 width: 100%;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-backdrop-filter: saturate(90%);
-}
+height: auto;
+
+
+
+} */
 
 .next {
   cursor: pointer;
@@ -782,8 +783,9 @@ font-size: 30px;
   position: relative;
 }
 
-.mySlides {
-  max-width: 100%;
+.mySlides img {
+width: 100%;
+height: auto;
 }
 .slider_img_maquinaria {
 width: 660px;
