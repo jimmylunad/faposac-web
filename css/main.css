@@ -75,7 +75,9 @@ color: #fdd400;
   right: 120px;
 
 }
-
+.idioma_li a {
+  text-decoration: none;
+}
 
 /* ----------------------------------- */
 
