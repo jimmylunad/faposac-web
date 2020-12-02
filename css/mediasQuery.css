@@ -1,4 +1,16 @@
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
+  .section-02__div {
+    width: 33.33%;
+  }
+  .section-02__div_hoverOn {
+    width: 33.33%;
+  }
+  .section-02__div_header{ 
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
 .section-01_video {
   display: flex;
   justify-content: center;
