@@ -161,19 +161,6 @@ backdrop-filter: saturate(90%);
 
 }
 
-/* @media screen and (max-width:1440px){ 
-.nav_log_img{
-  height: 160px;
-left: 140px;
-
-}
-.header {
-height: 60px;
-}
-
-
-} */
-
 
 /* SELECTOR DE IDIOMAS */
 
@@ -535,7 +522,7 @@ padding: 80px 0px 0px 0px;
    flex-direction: column;
    justify-content: center;
    /* align-items: center; */
-   width:550px;
+    width:50%;
 
     height: 600px;
   background-color: #1c1b1b;
@@ -565,7 +552,7 @@ padding: 80px 0px 0px 0px;
 .sider_div_img_operaciones {
   display: flex;
   flex-direction: column;
-width:550px;
+ width:50%;
   height: 600px;
 transform: scaleX(-1);
 background-image: url(../assets/Maquinarias/ServicioLOGISTICA.jpg);
@@ -577,7 +564,7 @@ background-size: cover;
 .sider_div_img_estiba {
   display: flex;
   flex-direction: column;
-width:550px;
+ width:50%;
   height: 600px;
 /* transform: scaleX(-1); */
 background-image: url(../assets/Maquinarias/ServicioESTIBAS.jpg);
@@ -589,7 +576,7 @@ background-size: cover;
 .sider_div_img_maritima {
   display: flex;
   flex-direction: column;
-width:550px;
+ width:50%;
   height: 600px;
 /* transform: scaleX(-1); */
 background-image: url(../assets/Maquinarias/ServicioAGENCIAMIENTO.jpg);
@@ -601,30 +588,7 @@ background-size: cover;
 
 
 
-@media screen and (min-width:1366px){
-    .sider_div_img_operaciones  {
-        width:50%;
-    }
-      .sider_div_img_estiba  {
-        width:50%;
-    }
-        .sider_div_img_maritima  {
-        width:50%;
-    }
 
-    .maquinaria_info {
-       width:45%;
-    }
-      .maquinaria_collage {
-       width:55%;
-    }
-
-
-      .sider_div_info  {
-        width:50%;
-    }
-
-        }
 
 .onda_central {
   position: absolute;
@@ -677,7 +641,7 @@ height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+width:45%;
   height: 100%;
 
 }
@@ -685,13 +649,10 @@ height: 400px;
 .maquinaria_collage {
   display: grid;
   grid-template-columns: repeat(4,142px);
- 
   grid-gap: 10px;
   justify-content: center;
   align-items: center;
-  width:65%;
-
-  
+width:55%; 
 }
 .section-04_h1 {  
   font-weight: 900;
@@ -706,6 +667,7 @@ height: 400px;
   color: #FFF;
   font-size: 16px;
   text-align: justify;
+  margin-top: 40px;
 }
 
 .imagen-collage {
@@ -1088,78 +1050,7 @@ color: #FFF;
   margin-left: 180px;
 }
 
-/* medias query  */
 
-/* @media (max-width: 1024px) {
-
-} */
-
-
-
-@media (max-width: 1024px) {
-
-  .nav_log_img {
-    left: 1px;
-  }
-.sider_div_info {
- width:300px;
- justify-content: center;
- align-items: center;
-}
-.section-02_container {
-  width: 100%;
-  
-}
-.section-02__div {
-  width: 280px;
-}
-
-.sider_div_info_h1 {
-  font-size: 50px;
-}
-.section-03_p {
-  width: 80%;
-  margin: 0px;  
-  font-size: 12px;
-
-}
-
-  .sider_div_img_operaciones  {
-        width:50%;
-    }
-    .sider-margins {
-      margin: 30px;
-   align-items: center;
-    }
-      .sider_div_img_estiba  {
-        width:50%;
-    }
-        .sider_div_img_maritima  {
-        width:50%;
-    }
-
-    .maquinaria_info {
-       width:45%;
-    }
-      .maquinaria_collage {
-       width:55%;
-    }
-      .sider_div_info  {
-        justify-content: center;
-        align-items: center;
-        width:50%;
-    }
-
-    .img_container_01 {
-      flex-wrap: wrap;
-    }
-        .img_container_02 {
-      flex-wrap: wrap;
-    }
-        .img_container_03 {
-      flex-wrap: wrap;
-    }
-}
 
 .nav_container_img_res {
   display: flex;
@@ -1182,226 +1073,4 @@ color: #FFF;
 
 
 
-/* media 768 */
-
-@media (max-width: 768px) {
-
-  .section-01_video {
-    width: 400px;
-    margin-top: -70px;
-  }
-  .section-01_text {
-        margin-top: -70px;
-  }
-  .nav_ul_respon {
-    justify-content: space-around;
-    align-items: center;
-     position: absolute;
-     padding: 50px 0px;
-     top: 50px;
-       right: 50px;
-       border-radius: 5px;
-    width: 300px;
-    height: 350px;
-    background-color: rgba(27, 35, 36, .7);
-   
-  flex-direction: column;
-}
-
-  .header {
-justify-content: flex-end;
-}
-
-.nav_container_img {
-  display: none;
-}
-
-.nav_ul {
-  display: none;
-}
-.nav_menu_option {
-  display: flex;
-  margin-right: 40px;
-
-}
-  .nav_log_img {
-    left: 40px;
-  }
-
-
-.titulo_h1 {
-  font-size: 100px;
-}
-.titulo_h3 {
-  font-size: 80px
-}
-
-.portada {
-height:100%;
-}
-
-/* .slider_img {
-width: 100%;
-} */
-
-.ondas_container {
-padding: 80px;
-}
-.section-03_container {
-  width: 100%;
-}
-
-.section-03 {
-  width: 100%;
-  padding: 10px;
-}
-
-.section-04 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  height: 100vh;
-  background-image: none;
-  background-color: #1c1b1b;
-}
-
-
-
-.section-04_p {
-
-  margin: 0px;
-  padding: 0px;
-}
-
-
-.maquinaria_container {
-justify-content: center;
-align-items: center;
-}
-
-  .maquinaria_info {
-       width:100%;
-       margin: 0px;
-      height: auto;
-      
-    }
-      .maquinaria_collage {
-       width:100%;
-       margin-top: 30px;
-    }
-
-
- }
-
-
- @media (max-width: 425px) { 
-   .header {
-     background-color: transparent;
-   }
-::-webkit-scrollbar {
-    display: none;
-}
-
-   .section-07_h1 {
-     font-size: 20px;
-   }
-   .clientes_text {
-     font-size: 12px;
-     width: 80%;
-   }
-   
-   .section-01_h1 {
-     font-size: 20px;
-   }
-.ondas_container_img {
-  max-width: 100%;
-}
-.form_container {
-  width: 80%;
-}
-.clientes_text {
-  width: 100%;
-}
-
-.section-01_video {
-width: 100%;
-}
-.section-04_h1 {
-  font-size: 24px;
-}
-
-.section-04 {
-max-width: 100%;
-padding: 10px 0px;
-}
-
-.ondas_container {
-  width: 100%;
-  padding: 80px 0px;
-}
-/* .section-03_container {
-  display: none;
-} */
-
-.section-04 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  padding: 90px 10px;
-}
-.maquinaria_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 100%;
-  height: 100%;
-  padding: 0px 0px;
-  flex-wrap: wrap;
-}
-
-.maquinaria_container_second{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-}
-.maquinaria_second_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 600px;
-}
-.maquinaria_collage {
-  display: flex;
-  flex-wrap: wrap;
-  /* grid-template-columns: repeat(2,1fr); */
-  /* grid-gap: 3px; */
-  justify-content: center;
-  align-items: center;
-  width:100%;
  
-}
-.titulo_h1 {
-  font-size: 30px;
-}
-.titulo_h3 {
-  font-size: 20px;
-}
-.slider_img {
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-
-}
-.nav_log_img {
-  height: 80px;
-}
-
- }

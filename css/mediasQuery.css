@@ -1,0 +1,329 @@
+@media (max-width: 1024px) {
+.section-01_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 50%;
+  height: 284px;
+}
+.section-01_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   width: auto;
+   width: 50%;
+  height: 384px;  
+}
+.section-02__div {
+  width: 33.33%;
+}
+.section-02__div_hoverOn {
+  width: 33.33%;
+}
+.section-02__div_header{ 
+  width: 100%;
+}
+.sider-margins {
+  margin-left: 20px;
+}
+.maquinaria_container {
+  padding: 0px
+}
+
+.maquinaria_collage {
+   grid-template-columns: repeat(4,110px);
+  grid-gap: 2px;
+}
+.section-04_h1 {
+  margin-left: 20px;
+}
+.nav_log_img {
+  left: 10px;
+} 
+
+.section-05 {
+  padding-left: 20px;
+}
+
+ }
+
+@media (max-width: 768px) {
+
+ .clientes_img {
+   width: 90px;
+ }
+
+ .maquinaria_second_2 {
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .maquinaria_info {
+   width: 80%;
+   height: 100px;
+   /* margin-top: 10px; */
+ }
+ .section-04_p {
+   margin-top: 0px;
+   margin-bottom: 20px;
+ }
+
+.maquinaria_collage {
+   grid-template-columns: repeat(4,150px);
+  grid-gap: 2px;
+}
+
+.section-04_h1 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.maquinaria_container_second {
+  justify-content: center;
+}
+.section-04 {
+  padding: 20px 0px;
+}
+.section-01 {
+display: flex;
+padding:90px 0px;
+flex-direction: column;
+}
+.section-01_text {
+  width: 100%;
+}
+.section-01_video {
+   width: 100%
+}
+.section-01 {
+  height: 100%;
+}
+.ondas_container {
+  padding:0px
+}
+.portada{
+  height: 100%;
+
+}
+.titular_01 {
+  top:20%;
+  left: 20%;
+}
+.goTo {
+  bottom: 40%;
+}
+.nav_log_img {
+  height: 130px;
+  width: 98px;
+}
+.nav_ul {
+  display: none;
+}
+.nav_container_img {
+  display: none;
+}
+.header {
+  justify-content: space-between;
+  background-color: transparent;
+ 
+}
+.nav_menu_option {
+  display: flex;
+  margin-right: 20px;
+
+}
+.nav_ul_respon {
+    justify-content: space-around;
+    align-items: center;
+     position: absolute;
+     padding: 50px 0px;
+     top: 50px;
+       right: 50px;
+       border-radius: 5px;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(27, 35, 36, .7);
+   
+  flex-direction: column;
+}
+.sider_div_info_h1 {
+  font-size: 50px;
+}
+.section-03_p {
+  font-size: 12px;
+  width: 320px;
+}
+.onda_central {
+  top: 20%;
+}
+ }
+
+
+@media (max-width: 425px) { 
+.section-01 {
+  padding: 20px 0px;
+}
+.section-05 {
+  padding: 0px;
+}
+
+.titulo_h1 {
+  font-size: 65px;
+}
+.titulo_h3 {
+  font-size: 30px;
+}
+.section-03{
+  padding: 0px;
+}
+.maquinaria_collage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+   /* grid-template-columns: repeat(2,110px);
+  grid-gap: 2px; */
+} 
+.maquinaria_second_2 {
+  max-width: 100%;
+  padding:0px;
+  margin: 0px;
+  height: 100%;
+}
+.section-04{
+  height: 100%;
+}
+.section-04_h1 {
+  font-size: 34px;
+}
+.maquinaria_container{
+  height: 100%;
+}
+
+.maquinaria_info {
+  width: 100%;
+  height: 100%;
+}
+.img_container_01 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clientes_text {
+  max-width: 100%;
+}
+.form_container {
+  width: 100%;
+}
+.sider_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.sider_div_info {
+  width: 100%;
+}
+.sider_div_img_maritima {
+  width: 100%;
+}
+.puertos_container {
+  display: flex;
+  flex-direction: column;
+}
+.section-05 {
+  height: 100%;
+}
+.puertos_options {
+  display: flex;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  height: 100%;
+  width: 100%;
+}
+.onda_central {
+  top: 5%;
+}
+.section-02_div_container {
+  flex-direction: column;
+}
+.section-02 {
+  height: 100%;
+  padding: 20px 0px;
+}
+/* .section-01_text {
+  padding: 0px 20px;
+} */
+.section-01_text_container {
+  width: 90%;
+}
+.nav_log_img {
+  width: 50px;
+  height: 70px;
+}
+.titular_01 {
+  top:10%;
+  left: 10%;
+}
+.section-02__div_body {
+  width: 100%;
+}
+.section-02__div_hoverOn{
+  width: 100%;
+}
+.section-04 {
+  background-color: black;
+  background-image: none;
+}
+.section-04_p {
+  margin-top: 20px;
+}
+.slider_img_maquinaria {
+  width: 100%;
+}
+.goTo {
+  top: 25%;
+  height: 40px;
+}
+.arrowDown {
+  margin-top: 10px;
+}
+
+}
+
+@media (max-width: 320px) { 
+.section-07_h1 {
+  font-size: 24px;
+}
+.form_container {
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  padding:0px
+}
+.input_class {
+  font-size: 16px;
+  margin-left: 5px;
+  width: 75%;
+}
+.arrowLo {
+  width: 10px;
+  
+}
+.section-01_h1 {
+  font-size: 24px;
+}
+.sider_div_info_h2 {
+  font-size: 24px;
+}
+.sider_div_info_h1 {
+  font-size: 44px;
+}
+.section-03_p {
+  width: 90%;
+}
+  
+}
+
+
+
