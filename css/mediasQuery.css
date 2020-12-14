@@ -61,10 +61,36 @@
  }
 
 @media (max-width: 768px) {
-
  .clientes_img {
    width: 90px;
  }
+.mySlides {
+  overflow: hidden;
+  width: 100%;
+ 
+}
+.mySlides img {
+width: auto;
+height: 80vh;
+}
+
+.portada::after {
+  content: '';
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  z-index: 1;
+}
+.portada {
+  width: 100%;
+  height: 80vh;
+  justify-content: flex-start;
+}
+
+.titulo_h1 {
+  font-size: 90px;
+}
 
  .maquinaria_second_2 {
    flex-direction: column;
@@ -119,8 +145,8 @@ flex-direction: column;
 
 }
 .titular_01 {
-  top:20%;
-  left: 20%;
+  top:30%;
+  left:12%;
 }
 .goTo {
   bottom: 40%;
@@ -180,11 +206,30 @@ flex-direction: column;
   padding: 0px;
 }
 
+
+.portada {
+  width: 100%;
+  height: 80vh;
+  justify-content: flex-start;
+}
+.portada::after {
+  content: '';
+  background-color: rgba(0, 0, 0, .4);
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  z-index: 1;
+}
 .titulo_h1 {
-  font-size: 65px;
+  font-size: 50px;
+}
+
+
+.titulo_h1 {
+  font-size: 45px;
 }
 .titulo_h3 {
-  font-size: 30px;
+  font-size: 13px;
 }
 .section-03{
   padding: 0px;
@@ -274,6 +319,7 @@ flex-direction: column;
   height: 70px;
 }
 .titular_01 {
+  
   top:10%;
   left: 10%;
 }
@@ -326,7 +372,10 @@ width: 100%;
 
 
 
-@media (max-width: 375px) { 
+@media (max-width: 425px) { 
+
+
+
 .section-07_h1 {
   font-size: 24px;
 }
@@ -344,11 +393,7 @@ align-self: center;
 .ondas_container {
 margin-top: -50px;
 }
-/* .textarea_class {
-  font-size: 16px;
-  margin-left: 5px;
-  width: 75%;
-} */
+
 .textarea_container {
 display: flex;
   width: 100%;
@@ -356,11 +401,6 @@ display: flex;
   padding:0px
 }
 
-/* .input_class {
-  font-size: 16px;
-  margin-left: 5px;
-  width: 75%;
-} */
 .arrowLo {
   width: 10px;
   
@@ -403,7 +443,7 @@ display: flex;
   z-index: 1;
 }
 .titulo_h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .mySlides {
@@ -414,15 +454,7 @@ display: flex;
 .mySlides img {
 width: auto;
 height: 80vh;
-
 }
-
-/* .slider_img {
-  background-size: contain;
-  width: 100%;
-  height: 100vh;
- 
-} */
 
 .section-02__div_body {
   margin-bottom: 20px;
@@ -446,4 +478,12 @@ height: 80vh;
 }
 
 
+@media (max-width: 320px) {
+.titulo_h1 {
+  font-size: 35px;
+}
+.titulo_h3 {
+  font-size: 9px;
+}
+ }
 

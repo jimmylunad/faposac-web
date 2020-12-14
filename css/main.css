@@ -121,7 +121,6 @@ height: auto;
   z-index: 4;
 }
 .dot {
-  background-color: red;
   cursor: pointer;
   position: absolute;
   z-index: 1002;
@@ -944,13 +943,14 @@ color: #1c1b1b;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 100%; */
+  width: 100%;
 }
 
 .img_container_01 {
   display: flex;
   justify-content: center;
   align-items: center;
+  
   /* width: 80%; */
 }
 
@@ -991,6 +991,7 @@ background-size: cover;
   font-size: 14.06px;
  line-height : 1.3;
   text-align: justify;
+  width: 100%;
 }
 
 .clientes_container {
