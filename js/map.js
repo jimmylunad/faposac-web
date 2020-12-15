@@ -79,7 +79,7 @@ switch (name) {
     break;
     
     case 'Chimbote':
-    initMap( -9.0633, -78.589)
+    initMap( -9.075121, -78.608711 )
            matarani.classList.remove('activeMe')
     ilo.classList.remove('activeMe')
     callao.classList.remove('activeMe')
