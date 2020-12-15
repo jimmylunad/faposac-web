@@ -1,10 +1,10 @@
 // Initialize and add the map
 function initMap(lat, lng) {
   // The location of Uluru
-  const uluru = { lat:  lat || -16.988333333333333 , lng:lng || -72.14888888888889 };
+  const uluru = { lat:  lat || -17.0039042 , lng:lng || -72.1066319 };
   // The map, centered at Uluru
   map = new google.maps.Map(document.getElementById("puertos_map"), {
-    zoom: 9,
+    zoom: 15,
     center: uluru,
   });
   // The marker, positioned at Uluru
@@ -12,7 +12,7 @@ function initMap(lat, lng) {
     position: uluru,
     map: map,
   });
-}
+} 
 
 function showMaps(name) {
   
@@ -26,7 +26,7 @@ function showMaps(name) {
 switch (name) {
   case 'Matarani':
 
-    initMap(-16.988333333333333,  -72.14888888888889)
+    initMap(-17.0039042,  -72.1066319)
        matarani.classList.add('activeMe')
     // mollendo.classList.remove('activeMe')
     ilo.classList.remove('activeMe')
@@ -37,7 +37,7 @@ switch (name) {
 
     case 'Ilo':
   
-      initMap(-17.638333333333332, -71.45)
+      initMap(-17.6447273,-71.3490879)
      matarani.classList.remove('activeMe')
   
     ilo.classList.add('activeMe')
@@ -47,7 +47,7 @@ switch (name) {
     break;
     case 'Callao':
  
-      initMap( -12.036666666666667, -77.22833333333334)
+      initMap( -12.0581093,-77.1505595)
           matarani.classList.remove('activeMe')
     // mollendo.classList.remove('activeMe')
     ilo.classList.remove('activeMe')
@@ -56,7 +56,7 @@ switch (name) {
         //  chimbote.classList.remove('activeMe')
     break;
     case 'Salaverry':
-    initMap( -8.216666666666667, -5.038333333333333)
+    initMap( -8.2228461,-78.9811106)
 
            matarani.classList.remove('activeMe')
     // mollendo.classList.remove('activeMe')
@@ -67,7 +67,7 @@ switch (name) {
     break;
 
     case 'Paita':
-    initMap( -5.038333333333333, -81.21833333333333)
+    initMap( -5.085106,-81.1116857)
            matarani.classList.remove('activeMe')
     ilo.classList.remove('activeMe')
     callao.classList.remove('activeMe')

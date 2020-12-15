@@ -89,7 +89,7 @@ height: 80vh;
 }
 
 .titulo_h1 {
-  font-size: 90px;
+  font-size: 40px;
 }
 
  .maquinaria_second_2 {
@@ -145,7 +145,7 @@ flex-direction: column;
 
 }
 .titular_01 {
-  top:30%;
+  top:20%;
   left:12%;
 }
 .goTo {
@@ -443,7 +443,10 @@ display: flex;
   z-index: 1;
 }
 .titulo_h1 {
-  font-size: 50px;
+  font-size: 20px;
+}
+.titulo_h3 {
+  font-size: 40px;
 }
 
 .mySlides {
@@ -480,10 +483,10 @@ height: 80vh;
 
 @media (max-width: 320px) {
 .titulo_h1 {
-  font-size: 35px;
+  font-size: 25px;
 }
 .titulo_h3 {
-  font-size: 9px;
+  font-size: 30px;
 }
  }
 
