@@ -22,6 +22,8 @@ function showMaps(name) {
   const callao = document.getElementById('Callao')
   const salaverry = document.getElementById('Salaverry')
  const paita = document.getElementById('Paita')
+ const chimbote = document.getElementById('Chimbote')
+
 
 switch (name) {
   case 'Matarani':
@@ -32,7 +34,7 @@ switch (name) {
     ilo.classList.remove('activeMe')
     callao.classList.remove('activeMe')
     salaverry.classList.remove('activeMe')
-      //  chimbote.classList.remove('activeMe')
+       chimbote.classList.remove('activeMe')
     break;
 
     case 'Ilo':
@@ -43,7 +45,7 @@ switch (name) {
     ilo.classList.add('activeMe')
     callao.classList.remove('activeMe')
     salaverry.classList.remove('activeMe')
-        //  chimbote.classList.remove('activeMe')
+         chimbote.classList.remove('activeMe')
     break;
     case 'Callao':
  
@@ -53,7 +55,7 @@ switch (name) {
     ilo.classList.remove('activeMe')
     callao.classList.add('activeMe')
     salaverry.classList.remove('activeMe')
-        //  chimbote.classList.remove('activeMe')
+         chimbote.classList.remove('activeMe')
     break;
     case 'Salaverry':
     initMap( -8.2228461,-78.9811106)
@@ -63,7 +65,7 @@ switch (name) {
     ilo.classList.remove('activeMe')
     callao.classList.remove('activeMe')
     salaverry.classList.add('activeMe')
-        //  chimbote.classList.remove('activeMe')
+         chimbote.classList.remove('activeMe')
     break;
 
     case 'Paita':
@@ -73,6 +75,17 @@ switch (name) {
     callao.classList.remove('activeMe')
     salaverry.classList.remove('activeMe')
     paita.classList.add('activeMe')
+    chimbote.classList.remove('activeMe')
+    break;
+    
+    case 'Chimbote':
+    initMap( -9.0633, -78.589)
+           matarani.classList.remove('activeMe')
+    ilo.classList.remove('activeMe')
+    callao.classList.remove('activeMe')
+    salaverry.classList.remove('activeMe')
+    paita.classList.remove('activeMe')
+    chimbote.classList.add('activeMe')
     break;
 
   default:
