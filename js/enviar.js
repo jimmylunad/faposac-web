@@ -28,11 +28,7 @@ $(document).ready(function () {
                 * */
              
 
-  sweetAlert({
-    title: 'Mensaje enviado con éxito', text: 'En la brevedad te estaremos respondiendo.', type: 'success', onClose: function () {
-      window.location.replace('')
-    }
-  });
+
                 // btnEnviar.val("Enviar formulario");
                 // btnEnviar.removeAttr("disabled");
             },
@@ -41,7 +37,11 @@ $(document).ready(function () {
                 * Se ejecuta cuando termina la petición y esta ha sido
                 * correcta
                 * */
-              console.log("SE ENVIO CON EXITO")
+              sweetAlert({
+    title: 'Mensaje enviado con éxito', text: 'En la brevedad te estaremos respondiendo.', type: 'success', onClose: function () {
+      window.location.replace('')
+    }
+  });
                 // $(".respuesta").html(data);
             },
             error: function(data){
