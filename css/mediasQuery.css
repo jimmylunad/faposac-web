@@ -1,3 +1,9 @@
+@media (min-width: 1600px) {
+  .titulo_h3 {
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 1280px) {
   .section-02__div {
     width: 33.33%;
@@ -7,6 +13,9 @@
   }
   .section-02__div_header{ 
     width: 100%;
+  }
+  .portada {
+    min-height: auto;
   }
 }
 
@@ -641,6 +650,11 @@
   .sider_div_info_h2 {
     font-size: 24px;
     margin-bottom: 5px;
+  }
+  
+  .sider_div_info_h2.small-text {
+    font-size: 22px;
+    padding-right: 0;
   }
 
   .sider_div_info_h1 {

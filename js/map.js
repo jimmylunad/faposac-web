@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap(lat, lng) {
   // The location of Uluru
-  const uluru = { lat:  lat || -17.0039042 , lng:lng || -72.1066319 };
+  const uluru = { lat:  lat || -16.9990375 , lng:lng || -72.1101332 };
   // The map, centered at Uluru
   map = new google.maps.Map(document.getElementById("puertos_map"), {
     zoom: 15,
@@ -28,7 +28,7 @@ function showMaps(name) {
 switch (name) {
   case 'Matarani':
 
-    initMap(-17.0039042,  -72.1066319)
+    initMap(-16.9990375, -72.1101332)
        matarani.classList.add('activeMe')
     // mollendo.classList.remove('activeMe')
     ilo.classList.remove('activeMe')
@@ -39,7 +39,7 @@ switch (name) {
 
     case 'Ilo':
   
-      initMap(-17.6447273,-71.3490879)
+      initMap(-17.6495428,-71.3514944)
      matarani.classList.remove('activeMe')
   
     ilo.classList.add('activeMe')
@@ -58,7 +58,7 @@ switch (name) {
          chimbote.classList.remove('activeMe')
     break;
     case 'Salaverry':
-    initMap( -8.2228461,-78.9811106)
+    initMap( -8.2285229, -78.9853852)
 
            matarani.classList.remove('activeMe')
     // mollendo.classList.remove('activeMe')
