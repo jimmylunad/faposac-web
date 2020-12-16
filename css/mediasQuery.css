@@ -432,6 +432,10 @@
     padding: 0 20px;
     box-sizing: border-box;
   }
+  
+  .slider_servicios_opciones.small-text .section-03_h1{
+    font-size: 10px;
+  }
 
   .nav_log_img {
     width: 50px;
