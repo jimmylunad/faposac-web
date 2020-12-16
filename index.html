@@ -26,14 +26,14 @@
       <img class="nav_log_img" src='./assets/nav_logo.png' alt="logo" />
     </div>
     <ul class="nav_ul">
-      <a class="nav_li" href="#PORTADA">HOME</a>
-      <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
-      <a class="nav_li" href="#FILOSOFIA">FILOSOFÍA</a>
-      <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
-      <a class="nav_li" href="#MAQUINARIAS">MAQUINARIAS</a>
-      <a class="nav_li" href="#PUERTOS">PUERTOS</a>
-      <a class="nav_li" href="#CLIENTES">CLIENTES</a>
-      <a class="nav_li" href="#CONTACTANOS">CONTÁCTANOS</a>
+      <a class="nav_li" onclick="goScroll('PORTADA')">HOME</a>
+      <a class="nav_li" onclick="goScroll('IDENTIDAD')">IDENTIDAD</a>
+      <a class="nav_li" onclick="goScroll('FILOSOFIA')">FILOSOFÍA</a>
+      <a class="nav_li" onclick="goScroll('SERVICIOS')">SERVICIOS</a>
+      <a class="nav_li" onclick="goScroll('MAQUINARIAS')">MAQUINARIAS</a>
+      <a class="nav_li" onclick="goScroll('PUERTOS')">PUERTOS</a>
+      <a class="nav_li" onclick="goScroll('CLIENTES')">CLIENTES</a>
+      <a class="nav_li" onclick="goScroll('CONTACTANOS')">CONTÁCTANOS</a>
     </ul>
     <div class="nav_container_img">
       <img class="nav_img" src='./assets/home.svg' alt="home" />
@@ -45,7 +45,6 @@
 
     <div class="nav_menu_option">
       <img class="nav_menu_option_img" src='./assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" />
-
       <ul class="nav_ul_respon " id='nav_ul_respon'>
         <div style="display: flex; width: 60px; justify-content: space-around;">
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
@@ -115,54 +114,54 @@
       </div>
     </div>
   </section>
-  <div id='IDENTIDAD'>
 
 
-    <section class="section-01">
-      <div class="section-01_video">
 
-        <iframe width="530px" height="284px" src="https://www.youtube.com/embed/SZi6D023kig" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
+  <section id='IDENTIDAD' class="section-01">
+    <div class="section-01_video">
 
-      <div class="section-01_text">
-        <img class="" src='./assets/onda_vector.png' alt="arrow" />
-        <br>
-        <div class="section-01_text_container">
-          <!-- <h1 class="section-01_h1">
+      <iframe width="530px" height="284px" src="https://www.youtube.com/embed/SZi6D023kig" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="section-01_text">
+      <img class="" src='./assets/onda_vector.png' alt="arrow" />
+      <br>
+      <div class="section-01_text_container">
+        <!-- <h1 class="section-01_h1">
           IDENTIDAD
         </h1> -->
-          <h1 class="section-01_h1"><span style="color:#383736">IDENTIDAD</span>
-          </h1>
-          <br>
-          <br>
-          <p class="section-01_p">
-            Facilidad Portuaria S.A.C. es una empresa que tiene como giro principal el agenciamiento marítimo, servicios
-            de estiba / desestiba y avituallamiento en naves multipropósitos, así como manipuleo y movilización de
-            mercadería general, contenerizada y equipos en los terminales portuarios y extraportuarios.
-          </p>
-          <br>
-          <p class="section-01_p">
-            Cuenta con más de 25 años de experiencia en el mercado y tiene presencia en los puertos de Matarani,
-            Mollendo,
-            Ilo, La Planchada, Callao, Salaverry y Chimbote.
-          </p>
-          <br>
-          <p class="section-01_p">
-            Nuestro principal objetivo es promover la mejora continua con los más altos estándares de calidad y
-            seguridad
-            en sus procesos logísticos y continuar invirtiendo en recursos que permitan ofrecer a nuestros clientes una
-            logística integral atendiendo sus requerimientos dentro de los plazos previstos y las exigencias del
-            mercado.
-          </p>
-        </div>
+        <h1 class="section-01_h1"><span style="color:#383736">IDENTIDAD</span>
+        </h1>
+        <br>
+        <br>
+        <p class="section-01_p">
+          Facilidad Portuaria S.A.C. es una empresa que tiene como giro principal el agenciamiento marítimo, servicios
+          de estiba / desestiba y avituallamiento en naves multipropósitos, así como manipuleo y movilización de
+          mercadería general, contenerizada y equipos en los terminales portuarios y extraportuarios.
+        </p>
+        <br>
+        <p class="section-01_p">
+          Cuenta con más de 25 años de experiencia en el mercado y tiene presencia en los puertos de Matarani,
+          Mollendo,
+          Ilo, La Planchada, Callao, Salaverry y Chimbote.
+        </p>
+        <br>
+        <p class="section-01_p">
+          Nuestro principal objetivo es promover la mejora continua con los más altos estándares de calidad y
+          seguridad
+          en sus procesos logísticos y continuar invirtiendo en recursos que permitan ofrecer a nuestros clientes una
+          logística integral atendiendo sus requerimientos dentro de los plazos previstos y las exigencias del
+          mercado.
+        </p>
       </div>
+    </div>
 
-    </section>
-  </div>
+  </section>
 
-  <section id='FILOSOFIA' class="section-02  parallax-content">
+
+  <section id='FILOSOFIA' class="section-02">
     <div class="section-02_container parallax-section ">
       <img class="" src='./assets/onda_vector.png' alt="arrow" />
       <br>
@@ -641,7 +640,8 @@
 
         </div>
         <br>
-        <form action="" method="post" enctype="text/plain">
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="formulario" enctype="text/plain">
           <div class="form_container">
             <input name="name" type="text" class="input_class" required placeholder="Escribe tu email...">
             <!-- <img style="width: 30px; margin-right: 20px;" src='./assets/gomessage.svg' alt="arrow" /> -->
@@ -652,7 +652,7 @@
               placeholder="Déjanos un mensaje..."></textarea>
           </div>
           <br>
-          <button type="submit" class="button_enviar">
+          <button class="button_enviar" id="btnEnviar" name='btnEnviar'>
             Enviar
           </button>
 
@@ -675,14 +675,14 @@
         <img class="nav_img" src='./assets/youtube.svg' alt="youtube" />
       </div>
       <ul class="nav_ul">
-        <a class="nav_li" href="#">HOME</a>
-        <a class="nav_li" href="#IDENTIDAD">IDENTIDAD</a>
-        <a class="nav_li" href="#FILOSOFIA">FILOSOFIA</a>
-        <a class="nav_li" href="#SERVICIOS">SERVICIOS</a>
-        <a class="nav_li" href="#MAQUINARIAS">MAQUINARIAS</a>
-        <a class="nav_li" href="#PUERTOS">PUERTOS</a>
-        <a class="nav_li" href="#CLIENTES">CLIENTES</a>
-        <a class="nav_li" href="#CONTACTANOS">CONTÁCTANOS</a>
+        <a class="nav_li" onclick="goScroll('PORTADA')">HOME</a>
+        <a class="nav_li" onclick="goScroll('IDENTIDAD')">IDENTIDAD</a>
+        <a class="nav_li" onclick="goScroll('FILOSOFÍA')">FILOSOFÍA</a>
+        <a class="nav_li" onclick="goScroll('SERVICIOS')">SERVICIOS</a>
+        <a class="nav_li" onclick="goScroll('MAQUINARIAS')">MAQUINARIAS</a>
+        <a class="nav_li" onclick="goScroll('PUERTOS')">PUERTOS</a>
+        <a class="nav_li" onclick="goScroll('CLIENTES')">CLIENTES</a>
+        <a class="nav_li" onclick="goScroll('CONTÁCTANOS')">CONTÁCTANOS</a>
       </ul>
       <p>
         Copyright © Todos los Derechos Reservados FAPOSAC.PE 2020
@@ -697,6 +697,13 @@
 <script src="js/servicios.js"></script>
 <script src="js/map.js"></script>
 <script src="js/menu.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+
+<script src="js/enviar.js"></script>
 <script defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNWPI2adPdfM9PEcH4pu0Z8kvJbTB3tBg&callback=initMap&libraries=&v=weekly">
   </script>
