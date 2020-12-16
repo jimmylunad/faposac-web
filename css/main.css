@@ -282,8 +282,17 @@ color: #fdd400;
   transition: all ease .3s;
 }
 
+.idioma__li-a:hover::after {
+  color: #FFFFFF;
+}
+
 .idioma__li-a.active {
   color: #fdd300;
+  background-color: transparent;
+}
+
+.idioma__li-a.active::after {
+  color: #FFFFFF;
 }
 
 .idioma__li-a::after {
@@ -1232,10 +1241,57 @@ color: #FFF;
 }
 
 
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+  z-index: 9999;
+}
 
+.menu-btn__burger {
+  width: 30px;
+  height: 4px;
+  background-color: #fdd300;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+  transition: all ease-in-out .3s;
+}
 
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fdd300;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+  transition: all ease-in-out .3s;
+}
 
+.menu-btn__burger::before {
+  transform: translateY(-8px);
+}
 
+.menu-btn__burger::after {
+  transform: translateY(8px);
+}
 
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-30px);
+  background: transparent;
+  box-shadow: none;
+}
 
- 
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(21px,-21px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(21px,21px);
+}
