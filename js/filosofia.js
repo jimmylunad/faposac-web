@@ -1,3 +1,4 @@
+
 function ocultarMision(element) {
   const mision_container_active = document.getElementById('mision_container_active')
   const mision_container = document.getElementById('mision_container')
