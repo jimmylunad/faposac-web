@@ -1080,7 +1080,8 @@ background-size: cover;
   font-weight: 900;
   text-align: center;
   color: #2c2c2c;
-  font-size: 50px;  
+  font-size: 50px;
+  margin-bottom: 35px;
 }
 
 .text_p_clientes {
