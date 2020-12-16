@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="al">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="../css/menu_toggle.css">
   <link rel="stylesheet" href="../css/mediasQuery.css">
 
-  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
-
   <title>FAPOSAC | WEB</title>
 </head>
 
@@ -26,14 +23,14 @@
       <img class="nav_log_img" src='../assets/nav_logo.png' alt="logo" />
     </div>
     <ul class="nav_ul">
-      <a class="nav_li" href="javascript:;" onclick="goScroll('PORTADA')">ZUHAUSE</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('IDENTIDAD')">IDENTITÄT</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('FILOSOFIA')">PHILOSOPHIE</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('SERVICIOS')">DIENSTLEISTUNGEN</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('MAQUINARIAS')">AUSRÜSTUNG</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('PUERTOS')">HÄFEN</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('CLIENTES')">KUNDEN</a>
-      <a class="nav_li" href="javascript:;" onclick="goScroll('CONTACTANOS')">KONTAKTE</a>
+      <a class="nav_li" href="#PORTADA">HOME</a>
+      <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
+      <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
+      <a class="nav_li" href="#SERVICIOS">SERVICES</a>
+      <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
+      <a class="nav_li" href="#PUERTOS">PORTS</a>
+      <a class="nav_li" href="#CLIENTES">CLIENTS</a>
+      <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
     </ul>
     <div class="nav_container_img">
       <img class="nav_img" src='../assets/home.svg' alt="home" />
@@ -44,24 +41,22 @@
 
 
     <div class="nav_menu_option">
-      <div class="menu-btn" onclick="MostrarMenu()">
-        <div class="menu-btn__burger"></div>
-      </div>
-      <!-- <img class="nav_menu_option_img" src='./assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" /> -->
+      <img class="nav_menu_option_img" src='../assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" />
+
       <ul class="nav_ul_respon " id='nav_ul_respon'>
-        <!-- <div style="display: flex; width: 60px; justify-content: space-around;">
+        <div style="display: flex; width: 60px; justify-content: space-around;">
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
-        </div> -->
-        <a class="nav_li" href="javascript:;" onclick="goScroll('PORTADA')">ZUHAUSE</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('IDENTIDAD')">IDENTITÄT</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('FILOSOFIA')">PHILOSOPHIE</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('SERVICIOS')">DIENSTLEISTUNGEN</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('MAQUINARIAS')">AUSRÜSTUNG</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('PUERTOS')">HÄFEN</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('CLIENTES')">KUNDEN</a>
-        <a class="nav_li" href="javascript:;" onclick="goScroll('CONTACTANOS')">KONTAKTE</a>
+        </div>
+        <a class="nav_li" href="#PORTADA">HOME</a>
+        <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
+        <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
+        <a class="nav_li" href="#SERVICIOS">SERVICES</a>
+        <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
+        <a class="nav_li" href="#PUERTOS">PORTS</a>
+        <a class="nav_li" href="#CLIENTES">CLIENTS</a>
+        <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
         <div class="nav_container_img_res">
           <img class="nav_img_res" src='../assets/home_blanco.svg' alt="home" />
           <img class="nav_img_res" src='../assets/faceboook_blanco.svg' alt="facebook" />
@@ -88,41 +83,38 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="titular_01 ">
+    <div class="titular_01">
       <h3 class="titulo_h3">
-        Seeverkehrsangentur und Logistiklösungen
+        Maritime agency and integrated logistics solutions
       </h3>
       <h1 class="titulo_h1">
-        Qualität und Effizienz
+        Quality and efficiency
       </h1>
     </div>
-    <div class="go__to">
-      <div class="go__to__idioma">
-        <ul class="idioma__ul">
-          <li class="idioma__li">
-            <a href="../" class="idioma__li-a">ES</a>
-          </li>
-          <li class="idioma__li">
-            <a href="../en/" class="idioma__li-a">EN</a>
-          </li>
-          <li class="idioma__li">
-            <a href="../al/" class="idioma__li-a active">AL</a>
-          </li>
-        </ul>
+
+    <div class="goTo">
+      <div id='idioma_container' class="idioma_container">
+        <li class="idioma_li">
+          <a class="nav_li" href="../">
+            ES /
+          </a>
+        </li>
+        <li class="idioma_li">
+          <a class="nav_li" style="color: #fdd300;" href="#">
+            EN /
+          </a>
+        </li>
+        <li class="idioma_li">
+          <a class="nav_li" href="../al/">
+            AL
+          </a>
+        </li>
       </div>
-      <div class="go__to__arrow-down">
-        <a onclick="goScroll('IDENTIDAD')" class="arrow-down__link">
-          <img src='../assets/arrowdown.svg' alt="arrow" />
-        </a>
-      </div>
+      <img class="arrowDown" src='../assets/arrowdown.svg' alt="arrow" />
     </div>
   </section>
-
-
-
   <section id='IDENTIDAD' class="section-01">
     <div class="section-01_video">
-
       <iframe width="530px" height="284px" src="https://www.youtube.com/embed/SZi6D023kig" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -135,14 +127,24 @@
         <!-- <h1 class="section-01_h1">
           IDENTIDAD
         </h1> -->
-        <h1 class="section-01_h1"><span style="color:#383736">IDENTITÄT</span>
+        <h1 class="section-01_h1"><span style="color:#383736">IDEN</span><span style="color:#5f5d5b">TITY</span>
         </h1>
+        <br>
+        <br>
         <p class="section-01_p">
-            Facilidad Portuaria S.A.C. ist ein unternehmen, dessen Hauptgeschäft maritime Dienstleistungen, Be- und Entladeleistungen für Handelsschiffe sowie der Umschlag und die Abfertigung von Gütern und Ausrüstungen in Hafen- und Außenhafen-Terminals umfassen und auf eine mehr als 25-jährige Erfahrung auf dem Markt zurückblicken kann. Das Unternehmen ist in den Häfen von Matarani, Mollendo und Ilo sowie auch in La Planchada, Callao, Salaverry und Chimbote vertreten.
+          Facilidad Portuaria SAC is a company, which core business is maritime agency, stevedoring and husbandry
+          services in multipurpose vessels, as well as handling and mobilization of merchandise and equipment in port
+          and extra- port terminals, with more tan 25 years of experience in the sector.
         </p>
         <br>
         <p class="section-01_p">
-            Das Hauptziel von Facilidad Portuaria SAC ist es, die kontinuierliche Verbesserung der internen Prozesse zu fördern und weiterhin in Ressourcen zu investieren, die es ermöglichen, unseren Kunden eine ganzheitliche Logistik anzubieten, die ihren Bedürfnissen und den Marktanforderungen gerecht wird.
+          It is present in the ports: Matarani, Mollendo, Ilo, La Planchada, Callao, Salaverry and Chimbote.
+        </p>
+        <br>
+        <p class="section-01_p">
+          The main focus of Facilidad Portuaria SAC is to promote continous improvement with the highest standards of
+          quality and security in logistics processes continue investing in resources that allow us to offer our clients
+          comprehensive logistics meeting their needs and market demands.
         </p>
       </div>
     </div>
@@ -150,14 +152,14 @@
   </section>
 
 
-  <section id='FILOSOFIA' class="section-02">
+  <section id='FILOSOFIA' class="section-02  parallax-content">
     <div class="section-02_container parallax-section ">
       <img class="" src='../assets/onda_vector.png' alt="arrow" />
       <br>
       <!-- <h1 class="section-01_h1">
         FILOSOFÍA
       </h1> -->
-      <h1 class="section-01_h1"><span style="color:#383736">PHILOSOPHIE</span>
+      <h1 class="section-01_h1"><span style="color:#383736">PHILO</span><span style="color:#5f5d5b">SOPHY</span>
       </h1>
 
       <div class="section-02_div_container">
@@ -172,11 +174,12 @@
           <div class="section-02__div_body">
 
             <h1 class="section-02_h1">
-              Unser Auftrag
+              Our mission
             </h1>
             <br>
             <p class="section-02_p">
-              Unsere Dienstleistungen sollen die Erwartungen unserer Kunden übertreffen. Unsere Kunden werden ständig über den Status der Schiffe, der Ladung, der Besatzung und die Seeprognose.
+              Offer our services exceeding the expectations of our customers by proving permanent information regarding
+              the status of the vessels, cargo as well, line up and sea forecast.
             </p>
           </div>
         </div>
@@ -190,7 +193,7 @@
             </div>
             <br>
             <h1 class="section-02_h1">
-              Unser Auftrag
+              Our mission
             </h1>
             <br>
           </div>
@@ -206,11 +209,12 @@
           <div class="section-02__div_body">
 
             <h1 class="section-02_h1">
-              Unsere Vision
+              Our vision
             </h1>
             <br>
             <p class="section-02_p">
-              Wir wollen auf Basis von Zurfriedenheit langristige Geschäftsbeziehungen mit unseren Kunden aufbauen und so unser Geschäftsgebiet entlang der gesamten Peruanischen Küste ausbauen.
+              Be the Maritime Agency placed in the mind of our clients when the require our services in the long term to
+              extend our banches along the Peruvian Coast.
             </p>
           </div>
         </div>
@@ -224,7 +228,7 @@
             <br>
 
             <h1 class="section-02_h1">
-              Unsere Vision
+              Our vision
             </h1>
             <br>
 
@@ -241,11 +245,12 @@
           <div class="section-02__div_body">
 
             <h1 class="section-02_h1">
-              Unsere Werte
+              Our values
             </h1>
             <br>
             <p class="section-02_p">
-              Unsere Werte sinde Verantwortung, Integrität, Anspruch auf höchste Qualität unserer Leistungen und Zufriedenheit unserer Kunden.
+              The responsabiliy, leadership, integrity and quality of our services for the best attention of our
+              clients.
             </p>
           </div>
         </div>
@@ -259,7 +264,7 @@
             <br>
 
             <h1 class="section-02_h1">
-              Unsere Werte
+              Our values
             </h1>
             <br>
 
@@ -273,22 +278,26 @@
   <section id='SERVICIOS' class="section-03">
 
     <div class="section-03_container">
-      <img class="" src='../assets/onda_vector.png' alt="arrow" />
+      <!-- titulo -->
       <br>
-      <h1 class="section-01_h1"><span style="color:#383736">DIENSTLEISTUNGEN</span>
+      <!-- <h1 class="section-01_h1">
+        SERVICIOS
+      </h1> -->
+
+      <h1 class="section-01_h1"><span style="color:#383736">SER</span><span style="color:#5f5d5b">VICES</span>
       </h1>
       <br>
 
       <!-- opciones -->
       <div class="slider_servicios_opciones">
         <h1 class="section-03_h1 activeH1" onclick="mostrarMe(this)" id='AgenciaOption'>
-          Seeverkehrsangentur
+          Maritime agency
         </h1>
         <h1 class="section-03_h1" onclick="mostrarMe(this)" id='estibaOption'>
-          Stevedoring Stauerei
+          Stevedoring Services
         </h1>
         <h1 class="section-03_h1" onclick="mostrarMe(this)" id='operacionesOption'>
-          Logistische Dienstleistungen
+          Logistics Services
         </h1>
       </div>
 
@@ -297,11 +306,17 @@
         <div class="sider_div_info">
           <div class='sider-margins'>
             <h2 class="sider_div_info_h2">
-              SEEVEVERKEHRSANGENTUR
+              MARITIME
             </h2>
+            <h1 class="sider_div_info_h1">
+              AGENCY
+            </h1>
             <br>
             <p class="section-03_p">
-              Bereitstellung der besten Lösungen in Matarani – Mollendo (Multibouys, GMP, Matarani Port Terminal – Tisur), Ilo (Multibouys, GMP, Tablones, Cata Cata/ TLT, Enersur Terminal, SPCC Terminal and Maritime Trestle SPCC ) für Abfertigung von Massengutfrachtern, Fischerbooten, Pasagierbooten, Stückgüter-Verschiffungen, Kontainer-Frachtern, Tankern und RoRo-Schiffen, und Salaverry (STI).
+              Providing the best solution in Matarani – Mollendo (Multibouys, GMP, Matarani Port Terminal – Tisur), Ilo
+              (Multibouys, GMP, Tablones, Cata Cata/ TLT, Enersur Terminal, SPCC Terminal and Maritime Trestle SPCC)
+              bulk carriers, fishing, passengers, break bulk, container, tanker, ro- ro ships and tankers and Salaverry
+              (STI).
             </p>
           </div>
         </div>
@@ -314,11 +329,17 @@
         <div class="sider_div_info">
           <div class="sider-margins">
             <h2 class="sider_div_info_h2">
-              STEVEDORING STAUEREI
+              STEVEDORING
             </h2>
+
+            <h1 class="sider_div_info_h1">
+              SERVICES
+            </h1>
             <br>
             <p class="section-03_p">
-              Wir bieten Stauerei in Kontainer, RoRo-Schiffen, Massengutfrachtern, Rohren, großen Säcken, Blechkästen, als Stückgut, mit Container-Chassis, Stahlspulen, Projekt-Ladungen. Unsere Geräte sind alle zertifiziert.
+              We carry out stevedoring in: containers, ro ro cargo, break bulk, pipes, big bags, Steel plates, general
+              cargo, chassis, bundles, Steel coils, Project cargo, machineries and parts, etc. Our machineries are
+              properly certified.
             </p>
           </div>
         </div>
@@ -330,11 +351,16 @@
         <div class="sider_div_info">
           <div class="sider-margins">
             <h2 class="sider_div_info_h2">
-              LOGISTISCHE DIENSTLEISTUNGEN
+              LOGISTICS
             </h2>
+            <h1 class="sider_div_info_h1">
+              SERVICES
+            </h1>
             <br>
             <p class="section-03_p">
-              Mit Hilfe unserer Ausrüstung sind wir im Stande unseren Kunden alle effizienten logistischen Dienstleistungen anzubieten. So sind unsere Kunden in der Lage unsere Logistische Dienstleistungen in ihre Unternehmensprozesse zu integrieren und so die Herausforderungen der Globalisierung zu schaffen.
+              We own equipments, providing our customers efficient logistics service that successfully overcomes the
+              challenges of globalization through which we seek to integrate more services and add greater value to
+              their operation.
             </p>
           </div>
         </div>
@@ -349,7 +375,7 @@
     <div class="maquinaria_container">
       <div class="maquinaria_container_second">
         <h1 class="section-04_h1">
-          MASCHINENPARK
+          EQUIPMENTS
         </h1>
       </div>
 
@@ -357,41 +383,43 @@
         <div class="maquinaria_info">
           <img class="img_maquinaria" src='../assets/onda_vector.png' alt="arrow" />
           <p class="section-04_p">
-            Unsere Gerätschaften sind ordnungsgemäß zertifiziert und werden ständig von Vermessungsingeneuren in den Häfen gewartet. Unsere Extra-Port-Terminals und Lager unterliegen den höchsten Qualitäts- und Leistungsstandarts.
+            Our machineries are properly certified and we counted with surveyors to provide monitoring services within
+            ports, extra- port terminals and warehouses, with the highest standards of quality and performance for the
+            Benefit of foreign trade.
           </p>
         </div>
         <div class="maquinaria_collage">
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/BARREDORA.jpg);"
             onclick="showOverloadCollage(1)">
-            Kehrmaschine
+            SWEEPING MACHINES
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/CARGADORFRONTAL.jpg)"
             onclick="showOverloadCollage(2)">
-            Radlader
+            WHEEL LOADERS
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/clamshell.jpg);"
             onclick="showOverloadCollage(3)">
-            Mechanische und Hydraulikgreifer
+            MECHANICAL & ELECTRO-HYDRAULIC GRABS
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/TOLVA.jpg);"
             onclick="showOverloadCollage(4)">
-            Trichter
+            HOPPERS
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/corrales2.jpg);"
             onclick="showOverloadCollage(5)">
-            Stahlplatten
+            STEEL PLATES
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/MONTACARGAS.jpg);"
             onclick="showOverloadCollage(6)">
-            Gabelstapler
+            FORKLIFTS
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/Tina.jpg);"
             onclick="showOverloadCollage(7)">
-            Kübel
+            BUCKETS
           </div>
           <div class="imagen-collage" style="background-image: url(../assets/Maquinarias/TRANSPORTE.jpg);"
             onclick="showOverloadCollage(8)">
-            LKW
+            TRUCKS
           </div>
         </div>
       </div>
@@ -477,7 +505,7 @@
       PUERTOS
     </h1> -->
 
-    <h1 class="section-01_h1"><span style="color:#383736">HäTS</span>
+    <h1 class="section-01_h1"><span style="color:#383736">POR</span><span style="color:#5f5d5b">TS</span>
     </h1>
 
     <div class="puertos_container">
@@ -485,7 +513,7 @@
         <div class="puertos_list">
           <img src='../assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
           <h1 class="puertos_h1 activeMe" id='Matarani' onclick="showMaps('Matarani')">
-            Matarani
+            Matarani (Mollendo)
           </h1>
         </div>
         <div class="puertos_list">
@@ -514,7 +542,7 @@
         </div>
         <div class="puertos_list">
           <img src='../assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
-          <h1 class="puertos_h1" id='Paita' onclick="showMaps('Paita')">
+          <h1 class="puertos_h1" id='Mollendo' onclick="showMaps('Mollendo')">
             Paita
           </h1>
         </div>
@@ -522,6 +550,10 @@
 
       </div>
       <div class="puertos_map" id='puertos_map'>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.46434591286015!2d-72.10832574246116!3d-17.002588316461658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91415b02a934acad%3A0x2469f3ec9178c4c1!2sPuerto%20de%20Matarani!5e0!3m2!1ses-419!2spe!4v1606069840165!5m2!1ses-419!2spe"
+          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
       </div>
     </div>
 
@@ -529,14 +561,17 @@
 
   <!-- - -------------------------------------------------------------------- -->
   <section id='CLIENTES' class="section-06">
-    <img class="" src='../assets/onda_vector.png' alt="arrow" />
     <br>
-    <h1 class="section-01_h1"><span style="color:#383736">KUNDEN</span>
+    <!-- <h1 class="section-06_h1">
+      CLIENTES
+    </h1> -->
+    <h1 class="section-01_h1"><span style="color:#383736">CLIEN</span><span style="color:#5f5d5b">TS</span>
     </h1>
     <div class="clientes_container">
       <div class="clientes_text">
-        <p class="text_p_clientes">
-          Dies sind einige der wichtigsten, die uns vertraut haben, um sie bei ihrem Wachstum und ihrer Entwicklung Ihres Geschäfts zu begleiten:
+        <p>
+          These are some of the main ones who have trusted us to accompany them in their growth and
+          development of your business:
         </p>
       </div>
 
@@ -578,8 +613,9 @@
       <img class="ondas_container_img" src='../assets/onda_vector.png' alt="arrow" />
       <br>
       <h1 class="section-07_h1">
-        KONTAKT
+        CONTACT
       </h1>
+      <br>
 
       <div class="contactos_container">
         <div class="iconos_container">
@@ -589,19 +625,20 @@
           </div>
 
         </div>
-
-        <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="formulario" enctype="text/plain">
+        <br>
+        <form action="" method="post" enctype="text/plain">
           <div class="form_container">
-            <input name="name" type="text" class="input_class" required placeholder="Schreiben Sie Ihre E-Mail...">
+            <input name="name" type="text" class="input_class" required placeholder="Write your email...">
+            <!-- <img style="width: 30px; margin-right: 20px;" src='./assets/gomessage.svg' alt="arrow" /> -->
           </div>
           <br>
           <div class="textarea_container">
             <textarea name="name" type="textarea" class="textarea_class" required
-              placeholder="Hinterlassen Sie uns eine Nachricht..."></textarea>
+              placeholder="Leave us a message..."></textarea>
           </div>
           <br>
-          <button class="button_enviar" id="btnEnviar" name='btnEnviar'>
-            Senden
+          <button type="submit" class="button_enviar">
+            Send
           </button>
 
         </form>
@@ -623,17 +660,17 @@
         <img class="nav_img" src='../assets/youtube.svg' alt="youtube" />
       </div>
       <ul class="nav_ul">
-        <a class="nav_li" onclick="goScroll('PORTADA')">ZUHAUSE</a>
-        <a class="nav_li" onclick="goScroll('IDENTIDAD')">IDENTITÄT</a>
-        <a class="nav_li" onclick="goScroll('FILOSOFÍA')">PHILOSOPHIE</a>
-        <a class="nav_li" onclick="goScroll('SERVICIOS')">DIENSTLEISTUNGEN</a>
-        <a class="nav_li" onclick="goScroll('MAQUINARIAS')">AUSRÜSTUNG</a>
-        <a class="nav_li" onclick="goScroll('PUERTOS')">HÄFEN</a>
-        <a class="nav_li" onclick="goScroll('CLIENTES')">KUNDEN</a>
-        <a class="nav_li" onclick="goScroll('CONTÁCTANOS')">KONTAKTE</a>
+        <a class="nav_li" href="#PORTADA">HOME</a>
+        <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
+        <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
+        <a class="nav_li" href="#SERVICIOS">SERVICES</a>
+        <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
+        <a class="nav_li" href="#PUERTOS">PORTS</a>
+        <a class="nav_li" href="#CLIENTES">CLIENTS</a>
+        <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
       </ul>
       <p>
-        Copyright © Alle Rechte vorbehalten FAPOSAC.PE 2020
+        Copyright © All rights reserved FAPOSAC.PE 2020
       </p>
     </div>
   </section>
@@ -645,15 +682,5 @@
 <script src="../js/servicios.js"></script>
 <script src="../js/map.js"></script>
 <script src="../js/menu.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
-
-<script src="js/enviar.js"></script>
-<script defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNWPI2adPdfM9PEcH4pu0Z8kvJbTB3tBg&callback=initMap&libraries=&v=weekly">
-  </script>
 
 </html>

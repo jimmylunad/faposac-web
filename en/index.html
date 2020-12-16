@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="../css/menu_toggle.css">
   <link rel="stylesheet" href="../css/mediasQuery.css">
 
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
   <title>FAPOSAC | WEB</title>
 </head>
 
@@ -23,14 +26,14 @@
       <img class="nav_log_img" src='../assets/nav_logo.png' alt="logo" />
     </div>
     <ul class="nav_ul">
-      <a class="nav_li" href="#PORTADA">HOME</a>
-      <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
-      <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
-      <a class="nav_li" href="#SERVICIOS">SERVICES</a>
-      <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
-      <a class="nav_li" href="#PUERTOS">PORTS</a>
-      <a class="nav_li" href="#CLIENTES">CLIENTS</a>
-      <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('PORTADA')">HOME</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('IDENTIDAD')">IDENTITY</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('FILOSOFIA')">PHILOSOPHY</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('SERVICIOS')">SERVICES</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('MAQUINARIAS')">EQUIPMENT</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('PUERTOS')">PORTS</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('CLIENTES')">CLIENTS</a>
+      <a class="nav_li" href="javascript:;" onclick="goScroll('CONTACTANOS')">CONTACTS</a>
     </ul>
     <div class="nav_container_img">
       <img class="nav_img" src='../assets/home.svg' alt="home" />
@@ -41,22 +44,24 @@
 
 
     <div class="nav_menu_option">
-      <img class="nav_menu_option_img" src='../assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" />
-
+      <div class="menu-btn" onclick="MostrarMenu()">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <!-- <img class="nav_menu_option_img" src='./assets/menu-option.svg' alt="logo" onclick="MostrarMenu()" /> -->
       <ul class="nav_ul_respon " id='nav_ul_respon'>
-        <div style="display: flex; width: 60px; justify-content: space-around;">
+        <!-- <div style="display: flex; width: 60px; justify-content: space-around;">
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
           <div style="border-radius: 50%; width: 10px; height: 10px; background-color: #fdd300;"></div>
-        </div>
-        <a class="nav_li" href="#PORTADA">HOME</a>
-        <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
-        <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
-        <a class="nav_li" href="#SERVICIOS">SERVICES</a>
-        <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
-        <a class="nav_li" href="#PUERTOS">PORTS</a>
-        <a class="nav_li" href="#CLIENTES">CLIENTS</a>
-        <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
+        </div> -->
+        <a class="nav_li" href="javascript:;" onclick="goScroll('PORTADA')">HOME</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('IDENTIDAD')">IDENTITY</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('FILOSOFIA')">PHILOSOPHY</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('SERVICIOS')">SERVICES</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('MAQUINARIAS')">EQUIPMENT</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('PUERTOS')">PORTS</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('CLIENTES')">CLIENTS</a>
+        <a class="nav_li" href="javascript:;" onclick="goScroll('CONTACTANOS')">CONTACTS</a>
         <div class="nav_container_img_res">
           <img class="nav_img_res" src='../assets/home_blanco.svg' alt="home" />
           <img class="nav_img_res" src='../assets/faceboook_blanco.svg' alt="facebook" />
@@ -83,7 +88,7 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="titular_01">
+    <div class="titular_01 ">
       <h3 class="titulo_h3">
         Maritime agency and integrated logistics solutions
       </h3>
@@ -91,30 +96,33 @@
         Quality and efficiency
       </h1>
     </div>
-
-    <div class="goTo">
-      <div id='idioma_container' class="idioma_container">
-        <li class="idioma_li">
-          <a class="nav_li" href="../">
-            ES /
-          </a>
-        </li>
-        <li class="idioma_li">
-          <a class="nav_li" style="color: #fdd300;" href="#">
-            EN /
-          </a>
-        </li>
-        <li class="idioma_li">
-          <a class="nav_li" href="../al/">
-            AL
-          </a>
-        </li>
+    <div class="go__to">
+      <div class="go__to__idioma">
+        <ul class="idioma__ul">
+          <li class="idioma__li">
+            <a href="../" class="idioma__li-a">ES</a>
+          </li>
+          <li class="idioma__li">
+            <a href="../en/" class="idioma__li-a active">EN</a>
+          </li>
+          <li class="idioma__li">
+            <a href="../al/" class="idioma__li-a">AL</a>
+          </li>
+        </ul>
       </div>
-      <img class="arrowDown" src='../assets/arrowdown.svg' alt="arrow" />
+      <div class="go__to__arrow-down">
+        <a onclick="goScroll('IDENTIDAD')" class="arrow-down__link">
+          <img src='../assets/arrowdown.svg' alt="arrow" />
+        </a>
+      </div>
     </div>
   </section>
+
+
+
   <section id='IDENTIDAD' class="section-01">
     <div class="section-01_video">
+
       <iframe width="530px" height="284px" src="https://www.youtube.com/embed/SZi6D023kig" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -127,14 +135,10 @@
         <!-- <h1 class="section-01_h1">
           IDENTIDAD
         </h1> -->
-        <h1 class="section-01_h1"><span style="color:#383736">IDEN</span><span style="color:#5f5d5b">TITY</span>
+        <h1 class="section-01_h1"><span style="color:#383736">IDENTITY</span>
         </h1>
-        <br>
-        <br>
         <p class="section-01_p">
-          Facilidad Portuaria SAC is a company, which core business is maritime agency, stevedoring and husbandry
-          services in multipurpose vessels, as well as handling and mobilization of merchandise and equipment in port
-          and extra- port terminals, with more tan 25 years of experience in the sector.
+          Facilidad Portuaria SAC is a company, which core business is maritime agency, stevedoring and husbandry services in multipurpose vessels, as well as handling and mobilization of merchandise and equipment in port and extra- port terminals, with more tan 25 years of experience in the sector.
         </p>
         <br>
         <p class="section-01_p">
@@ -142,9 +146,7 @@
         </p>
         <br>
         <p class="section-01_p">
-          The main focus of Facilidad Portuaria SAC is to promote continous improvement with the highest standards of
-          quality and security in logistics processes continue investing in resources that allow us to offer our clients
-          comprehensive logistics meeting their needs and market demands.
+          The main focus of Facilidad Portuaria SAC is to promote continous improvement with the highest standards of quality and security in logistics processes continue investing in resources that allow us to offer our clients comprehensive logistics meeting their needs and market demands.
         </p>
       </div>
     </div>
@@ -152,14 +154,14 @@
   </section>
 
 
-  <section id='FILOSOFIA' class="section-02  parallax-content">
+  <section id='FILOSOFIA' class="section-02">
     <div class="section-02_container parallax-section ">
       <img class="" src='../assets/onda_vector.png' alt="arrow" />
       <br>
       <!-- <h1 class="section-01_h1">
         FILOSOFÍA
       </h1> -->
-      <h1 class="section-01_h1"><span style="color:#383736">PHILO</span><span style="color:#5f5d5b">SOPHY</span>
+      <h1 class="section-01_h1"><span style="color:#383736">PHILOSOPHY</span>
       </h1>
 
       <div class="section-02_div_container">
@@ -178,8 +180,7 @@
             </h1>
             <br>
             <p class="section-02_p">
-              Offer our services exceeding the expectations of our customers by proving permanent information regarding
-              the status of the vessels, cargo as well, line up and sea forecast.
+              Offer our services exceeding the expectations of our customers by proving permanent information regarding the status of the vessels, cargo as well, line up and sea forecast.
             </p>
           </div>
         </div>
@@ -213,8 +214,7 @@
             </h1>
             <br>
             <p class="section-02_p">
-              Be the Maritime Agency placed in the mind of our clients when the require our services in the long term to
-              extend our banches along the Peruvian Coast.
+              Be the Maritime Agency placed in the mind of our clients when the require our services in the long term to extend our banches along the Peruvian Coast.
             </p>
           </div>
         </div>
@@ -249,8 +249,7 @@
             </h1>
             <br>
             <p class="section-02_p">
-              The responsabiliy, leadership, integrity and quality of our services for the best attention of our
-              clients.
+              The responsabiliy, leadership, integrity and quality of our services for the best attention of our clients.
             </p>
           </div>
         </div>
@@ -278,13 +277,9 @@
   <section id='SERVICIOS' class="section-03">
 
     <div class="section-03_container">
-      <!-- titulo -->
+      <img class="" src='../assets/onda_vector.png' alt="arrow" />
       <br>
-      <!-- <h1 class="section-01_h1">
-        SERVICIOS
-      </h1> -->
-
-      <h1 class="section-01_h1"><span style="color:#383736">SER</span><span style="color:#5f5d5b">VICES</span>
+      <h1 class="section-01_h1"><span style="color:#383736">SERVICES</span>
       </h1>
       <br>
 
@@ -313,10 +308,7 @@
             </h1>
             <br>
             <p class="section-03_p">
-              Providing the best solution in Matarani – Mollendo (Multibouys, GMP, Matarani Port Terminal – Tisur), Ilo
-              (Multibouys, GMP, Tablones, Cata Cata/ TLT, Enersur Terminal, SPCC Terminal and Maritime Trestle SPCC)
-              bulk carriers, fishing, passengers, break bulk, container, tanker, ro- ro ships and tankers and Salaverry
-              (STI).
+              Providing the best solution in Matarani – Mollendo (Multibouys, GMP, Matarani Port Terminal – Tisur), Ilo (Multibouys, GMP, Tablones, Cata Cata/ TLT, Enersur Terminal, SPCC Terminal and Maritime Trestle SPCC) bulk carriers, fishing, passengers, break bulk, container, tanker, ro- ro ships and tankers and Salaverry (STI).
             </p>
           </div>
         </div>
@@ -337,9 +329,7 @@
             </h1>
             <br>
             <p class="section-03_p">
-              We carry out stevedoring in: containers, ro ro cargo, break bulk, pipes, big bags, Steel plates, general
-              cargo, chassis, bundles, Steel coils, Project cargo, machineries and parts, etc. Our machineries are
-              properly certified.
+              We carry out stevedoring in: containers, ro ro cargo, break bulk, pipes, big bags, Steel plates, general cargo, chassis, bundles, Steel coils, Project cargo, machineries and parts, etc. Our machineries are properly certified.
             </p>
           </div>
         </div>
@@ -358,9 +348,7 @@
             </h1>
             <br>
             <p class="section-03_p">
-              We own equipments, providing our customers efficient logistics service that successfully overcomes the
-              challenges of globalization through which we seek to integrate more services and add greater value to
-              their operation.
+              We own equipments, providing our customers efficient logistics service that successfully overcomes the challenges of globalization through which we seek to integrate more services and add greater value to their operation.
             </p>
           </div>
         </div>
@@ -383,9 +371,7 @@
         <div class="maquinaria_info">
           <img class="img_maquinaria" src='../assets/onda_vector.png' alt="arrow" />
           <p class="section-04_p">
-            Our machineries are properly certified and we counted with surveyors to provide monitoring services within
-            ports, extra- port terminals and warehouses, with the highest standards of quality and performance for the
-            Benefit of foreign trade.
+            Our machineries are properly certified and we counted with surveyors to provide monitoring services within ports, extra- port terminals and warehouses, with the highest standards of quality and performance for the Benefit of foreign trade.
           </p>
         </div>
         <div class="maquinaria_collage">
@@ -505,7 +491,7 @@
       PUERTOS
     </h1> -->
 
-    <h1 class="section-01_h1"><span style="color:#383736">POR</span><span style="color:#5f5d5b">TS</span>
+    <h1 class="section-01_h1"><span style="color:#383736">PORTS</span>
     </h1>
 
     <div class="puertos_container">
@@ -513,7 +499,7 @@
         <div class="puertos_list">
           <img src='../assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
           <h1 class="puertos_h1 activeMe" id='Matarani' onclick="showMaps('Matarani')">
-            Matarani (Mollendo)
+            Matarani
           </h1>
         </div>
         <div class="puertos_list">
@@ -542,7 +528,7 @@
         </div>
         <div class="puertos_list">
           <img src='../assets/ubicacion_amarillo.svg' alt="arrow" style="width: 20px; margin-right: 10px;" />
-          <h1 class="puertos_h1" id='Mollendo' onclick="showMaps('Mollendo')">
+          <h1 class="puertos_h1" id='Paita' onclick="showMaps('Paita')">
             Paita
           </h1>
         </div>
@@ -550,10 +536,6 @@
 
       </div>
       <div class="puertos_map" id='puertos_map'>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.46434591286015!2d-72.10832574246116!3d-17.002588316461658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91415b02a934acad%3A0x2469f3ec9178c4c1!2sPuerto%20de%20Matarani!5e0!3m2!1ses-419!2spe!4v1606069840165!5m2!1ses-419!2spe"
-          width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0"></iframe>
       </div>
     </div>
 
@@ -561,17 +543,14 @@
 
   <!-- - -------------------------------------------------------------------- -->
   <section id='CLIENTES' class="section-06">
+    <img class="" src='../assets/onda_vector.png' alt="arrow" />
     <br>
-    <!-- <h1 class="section-06_h1">
-      CLIENTES
-    </h1> -->
-    <h1 class="section-01_h1"><span style="color:#383736">CLIEN</span><span style="color:#5f5d5b">TS</span>
+    <h1 class="section-01_h1"><span style="color:#383736">CLIENTS</span>
     </h1>
     <div class="clientes_container">
       <div class="clientes_text">
-        <p>
-          These are some of the main ones who have trusted us to accompany them in their growth and
-          development of your business:
+        <p class="text_p_clientes">
+          These are some of the main ones who have trusted us to accompany them in their growth and development of your business:
         </p>
       </div>
 
@@ -615,7 +594,6 @@
       <h1 class="section-07_h1">
         CONTACT
       </h1>
-      <br>
 
       <div class="contactos_container">
         <div class="iconos_container">
@@ -625,11 +603,10 @@
           </div>
 
         </div>
-        <br>
-        <form action="" method="post" enctype="text/plain">
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="formulario" enctype="text/plain">
           <div class="form_container">
             <input name="name" type="text" class="input_class" required placeholder="Write your email...">
-            <!-- <img style="width: 30px; margin-right: 20px;" src='./assets/gomessage.svg' alt="arrow" /> -->
           </div>
           <br>
           <div class="textarea_container">
@@ -637,7 +614,7 @@
               placeholder="Leave us a message..."></textarea>
           </div>
           <br>
-          <button type="submit" class="button_enviar">
+          <button class="button_enviar" id="btnEnviar" name='btnEnviar'>
             Send
           </button>
 
@@ -660,14 +637,14 @@
         <img class="nav_img" src='../assets/youtube.svg' alt="youtube" />
       </div>
       <ul class="nav_ul">
-        <a class="nav_li" href="#PORTADA">HOME</a>
-        <a class="nav_li" href="#IDENTIDAD">IDENTITY</a>
-        <a class="nav_li" href="#FILOSOFIA">PHILOSOPHY</a>
-        <a class="nav_li" href="#SERVICIOS">SERVICES</a>
-        <a class="nav_li" href="#MAQUINARIAS">EQUIPMENT</a>
-        <a class="nav_li" href="#PUERTOS">PORTS</a>
-        <a class="nav_li" href="#CLIENTES">CLIENTS</a>
-        <a class="nav_li" href="#CONTACTANOS">CONTACTS</a>
+        <a class="nav_li" onclick="goScroll('PORTADA')">HOME</a>
+        <a class="nav_li" onclick="goScroll('IDENTIDAD')">IDENTITY</a>
+        <a class="nav_li" onclick="goScroll('FILOSOFÍA')">PHILOSOPHY</a>
+        <a class="nav_li" onclick="goScroll('SERVICIOS')">SERVICES</a>
+        <a class="nav_li" onclick="goScroll('MAQUINARIAS')">EQUIPMENT</a>
+        <a class="nav_li" onclick="goScroll('PUERTOS')">PORTS</a>
+        <a class="nav_li" onclick="goScroll('CLIENTES')">CLIENTS</a>
+        <a class="nav_li" onclick="goScroll('CONTÁCTANOS')">CONTACTS</a>
       </ul>
       <p>
         Copyright © All rights reserved FAPOSAC.PE 2020
@@ -682,5 +659,15 @@
 <script src="../js/servicios.js"></script>
 <script src="../js/map.js"></script>
 <script src="../js/menu.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@7.8.2/dist/sweetalert2.all.js"></script>
+
+<script src="js/enviar.js"></script>
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNWPI2adPdfM9PEcH4pu0Z8kvJbTB3tBg&callback=initMap&libraries=&v=weekly">
+  </script>
 
 </html>
