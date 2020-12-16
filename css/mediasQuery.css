@@ -130,6 +130,7 @@
 
   .maquinaria_container_second {
     justify-content: center;
+    margin-bottom: 0;
   }
 
   .section-04 {
@@ -220,6 +221,12 @@
   
   .nav_ul_respon .nav_container_img_res {
     height: 100%;
+    margin-top: 0;
+  }
+  
+  .nav_ul_respon .nav_container_img_res .nav_img_res {
+    width: 25px;
+    height: 21px;
   }
 
   .sider_div_info_h1 {
@@ -294,7 +301,14 @@
   }
 
   .section-04_h1 {
-    font-size: 34px;
+    font-size: 24px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .img_maquinaria {
+    width: auto;
+    margin-bottom: 35px;
   }
 
   .maquinaria_container{
@@ -326,15 +340,29 @@
 
   .sider_div_info {
     width: 100%;
+    height: auto;
+  }
+
+  .sider-margins {
+    margin: 0;
+    width: 100%;
+    padding: 50px 20px 60px;
+    box-sizing: border-box;
   }
 
   .sider_div_img_maritima, .sider_div_img_estiba, .sider_div_img_operaciones {
     width: 100%;
+    height: 260px;
   }
 
   .puertos_container {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
+  }
+
+  .section-04 {
+    padding: 50px 0 0;
   }
 
   .section-05 {
@@ -345,28 +373,64 @@
     display: flex;
     flex-direction: initial;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    box-sizing: border-box;
+    padding: 0 20px 25px;
     height: 100%;
     width: 100%;
   }
 
+  .puertos_list {
+    margin-top: 0;
+    width: calc(50% - 10px);
+    margin-bottom: 15px;
+  }
+
+  .puertos_map {
+    height: 350px;
+  }
+
   .onda_central {
-    top: 5%;
+    top: initial;
+    bottom: calc(260px - 15px);
   }
 
   .section-02_div_container {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .section-02 {
     height: 100%;
-    padding: 20px 0px;
+    padding: 50px 0px;
   }
 
   .section-01_text_container {
-    width: 90%;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .section-02_container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .section-03_container {
+    padding: 50px 0 0;
+  }
+
+  .section-03_h1 {
+    margin-top: 0;
+    width: 33.33%;
+  }
+
+  .slider_servicios_opciones {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
   .nav_log_img {
@@ -401,6 +465,25 @@
     width: 100%;
   }
 
+  .section-06 {
+    padding: 50px 0;
+  }
+
+  .clientes_container {
+    margin-top: 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .clientes_text p {
+    font-family: 'Helvetica LT Std';
+    font-weight: normal;
+    opacity: 1;
+    color: #5f5d5b;
+    margin-bottom: 40px;
+  }
+
   .goTo {
     top: 25%;
     height: 40px;
@@ -423,8 +506,36 @@
   }
 
   .section-07 {
-    height: 650px;
-    padding: 20px 0px;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .section-08 {
+    height: auto;
+    padding: 80px 0 50px;
+  }
+
+  .footer_principal {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .footer_principal p {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+
+  .footer_principal_img {
+    width: 100px;
+  }
+
+  .nav_img {
+    height: 18px;
   }
 
   .ondas_container {
@@ -435,26 +546,66 @@
 @media (max-width: 425px) { 
   .section-07_h1 {
     font-size: 24px;
+    margin-bottom: 35px;
   }
   .section-04_p {
     justify-self: center;
     align-self: center;
+    margin: 0;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
   }
   .form_container {
     display: flex;
     width: 100%;
-    font-size: 12px;
-    padding:0px
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: auto;
+  }
+
+  .input_class {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-family: 'Helvetica LT Std';
+    height: 45px;
+  }
+
+  .textarea_container {
+    height: auto;
+    background-color: transparent;
+  }
+
+  .textarea_class {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-family: 'Helvetica LT Std';
+    height: 100px;
   }
 
   .ondas_container {
-    margin-top: -50px;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .button_enviar {
+    position: static;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 45px;
   }
 
   .textarea_container {
     display: flex;
     width: 100%;
-    font-size: 12px;
     padding:0px
   }
 
@@ -463,17 +614,17 @@
   }
 
   .section-05 {
-    padding: 20px 0px;
+    padding: 50px 0 0;
   }
 
   .section-01 {
-    padding: 40px 0px;
+    padding: 50px 0px;
     height: 100%;
   }
 
   .section-01_text {
     height: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .section-01_h1 {
@@ -482,14 +633,21 @@
 
   .sider_div_info_h2 {
     font-size: 24px;
+    margin-bottom: 5px;
   }
 
   .sider_div_info_h1 {
-    font-size: 44px;
+    font-size: 24px;
   }
 
   .section-03_p {
-    width: 90%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #5f5d5b;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: justify;
+    font-weight: normal;
   }
 
   .portada {

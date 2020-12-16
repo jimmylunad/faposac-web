@@ -70,47 +70,12 @@ overload.style.display = 'none'
 function goScroll(name) {
   var element = document.getElementById(name);
   var margin = 80
-    // var headerOffset = 80;
-    // var elementPosition = element.getBoundingClientRect().top;
-    // var offsetPosition = elementPosition - headerOffset;
-
-    // window.scrollTo({
-    //      top: offsetPosition,
-    //      behavior: "smooth"
-    // });
   
-    console.log("element",element)
+  // console.log("element",element)
+  
   let dims = element.getBoundingClientRect();
 
-  console.log("DIMS", dims)
-  if (name === 'PORTADA') {
-      window.scrollTo(window.scrollX, 0);
-  }
-     if (name === 'IDENTIDAD') {
-      window.scrollTo(window.scrollX, 780);
-  }
-    if (name === 'FILOSOFIA') {
-      window.scrollTo(window.scrollX, 1330);
-  }
-     if (name === 'SERVICIOS') {
-      window.scrollTo(window.scrollX, 2019);
-  }
-       if (name === 'MAQUINARIAS') {
-      window.scrollTo(window.scrollX, 2946);
-  }
-        if (name === 'PUERTOS') {
-      window.scrollTo(window.scrollX, 3596);
-  }
-         if (name === 'CLIENTES') {
-      window.scrollTo(window.scrollX, 4396);
-  }
-          if (name === 'CONTACTANOS') {
-      window.scrollTo(window.scrollX, 4896);
-  }
-
-
+  // console.log("DIMS", dims)
+  window.scrollTo(window.scrollX, element.offsetTop - document.querySelector('.header').offsetHeight);
 }
-
-
-
 
