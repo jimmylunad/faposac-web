@@ -195,6 +195,10 @@ height: auto;
   text-transform: uppercase;
 }
 
+.titulo_h3 span{
+  display: block;
+}
+
 .titulo_h1 {
   color: #FFFFFF;
   font-size: 32px;
